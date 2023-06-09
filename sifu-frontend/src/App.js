@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Navigation from "./components/structure/header/Navigation.js";
-import Slider from "./components/structure/body/Slider.js";
+import Slider from "./components/structure/body/1_Slider.js";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -20,18 +20,25 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        <div className="App">
-          <Container maxWidth="xl">
-            <header className="App-header">
-              <Navigation />
-              {/* <Box sx={{ height: "100vh" }} /> */}
+        {/* <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        > */}
+          <CssBaseline />
+          <div className="App">
+            <Container maxWidth="xl">
+              <header className="App-header">
+                <Navigation />
+                {/* <Box sx={{ height: "100vh" }} /> */}
 
-              <Slider />
-              {/* <img src={logo} className="App-logo" alt="logo" /> */}
-            </header>
-          </Container>
-        </div>
+                <Slider />
+                {/* <img src={logo} className="App-logo" alt="logo" /> */}
+              </header>
+            </Container>
+          </div>
+        {/* </Box> */}
       </ThemeProvider>
     </Router>
   );
