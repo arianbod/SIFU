@@ -2,9 +2,10 @@
     "Navigation":
 {
 "About":"About",
-"Meaning":"Meaning",
-"Features":"Features",
-"Community":"Community"
+"Roadmap":"Roadmap",
+"Tokenomics":"Tokenomics",
+"Team":"Team",
+"Staking":"Staking"
 },
 "Slider":{
     "Header":"Memecoin from the east",

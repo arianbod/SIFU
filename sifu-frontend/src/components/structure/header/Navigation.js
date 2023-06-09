@@ -15,7 +15,7 @@ import { Menu as MenuIcon } from "@mui/icons-material";
 import { BrowserRouter, Link } from "react-router-dom";
 import AdbIcon from "@mui/icons-material/Adb";
 import Container from "@mui/material/Container";
-
+import Logo from "../../Logo";
 import Lang from "../../../lang/en.json";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -51,7 +51,8 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+          <Logo />
           <Typography
             variant="h6"
             noWrap
