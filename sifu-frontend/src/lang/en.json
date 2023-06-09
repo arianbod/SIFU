@@ -4,12 +4,12 @@
 "About":"About",
 "Meaning":"Meaning",
 "Features":"Features",
-"Community":"Community",
-"Contact":"contact us"
-}
-,"Slider":{
+"Community":"Community"
+},
+"Slider":{
     "Header":"Memecoin from the east",
     "Text":"Welcome to The Regal Sifu",
     "Text2":"Regal Sifu is a meme-coin built on the Ethereum blockchain."
-}
+},
+"Contact":"contact us"
 }
