@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Lang from "../../../lang/en.json";
 import Background from "../../../assets/slider_bg.png";
-import SliderPic from "../../../assets/Slider_pic.png";
+import TokenomicsPic from "../../../assets/Tokenomics_pic.svg";
 
 export default function SimpleContainer() {
   return (
@@ -38,7 +38,7 @@ export default function SimpleContainer() {
           <p>{Lang.Slider.Header}</p> {/* Add your paragraph here */}
           <h1>Tokenomics</h1> {/* Add your title here */}
           <Box sx={{ mt: 2 }}>
-            <img src={SliderPic} alt="Slider" />
+            <img src={TokenomicsPic} alt="Slider" />
           </Box>
         </Box>
       </Box>

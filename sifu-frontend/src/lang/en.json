@@ -1,5 +1,6 @@
 {
   "ProjectName": "Regal Sifu",
+  "Contact": "Buy Now",
   "Navigation": {
     "Home": "Home",
     "About": "About",
@@ -13,5 +14,10 @@
     "Text": "Welcome to The Regal Sifu",
     "Text2": "Regal Sifu is a meme-coin built on the Ethereum blockchain."
   },
-  "Contact": "Buy Now"
+  "Introduction": {
+    "Title1": "The Sifu ",
+    "Title2": "Legacy",
+    "Paragpraph": "Once upon a time in the vast kingdom of Shanghua, lived a rare & majestic panda named Ming. Known for his extraordinary wisdom and unmatched martial arts skills, Ming had earned the coveted title of \"The Regal Sifu - Emperor's Advisor.\"",
+    "Button": "Read more"
+  }
 }

@@ -36,9 +36,7 @@ export default function SimpleContainer() {
         >
           <p>{Lang.Slider.Header}</p> {/* Add your paragraph here */}
           <h1>Footer</h1> {/* Add your title here */}
-          <Box sx={{ mt: 2 }}>
-            <img src={SliderPic} alt="Slider" />
-          </Box>
+          <Box sx={{ mt: 2 }}>{/* <img src={SliderPic} alt="Slider" /> */}</Box>
         </Box>
       </Box>
     </React.Fragment>
