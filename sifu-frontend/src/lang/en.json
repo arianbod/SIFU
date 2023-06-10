@@ -1,16 +1,17 @@
-{"ProjectName":"Regal Sifu",
-    "Navigation":
 {
-"About":"About",
-"Roadmap":"Roadmap",
-"Tokenomics":"Tokenomics",
-"Team":"Team",
-"Staking":"Staking"
-},
-"Slider":{
-    "Header":"Memecoin from the east",
-    "Text":"Welcome to The Regal Sifu",
-    "Text2":"Regal Sifu is a meme-coin built on the Ethereum blockchain."
-},
-"Contact":"contact us"
+  "ProjectName": "Regal Sifu",
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Tokenomics": "Tokenomics",
+    "Roadmap": "Roadmap",
+    "Team": "Team",
+    "Staking": "Staking"
+  },
+  "Slider": {
+    "Header": "Memecoin from the east",
+    "Text": "Welcome to The Regal Sifu",
+    "Text2": "Regal Sifu is a meme-coin built on the Ethereum blockchain."
+  },
+  "Contact": "Buy Now"
 }

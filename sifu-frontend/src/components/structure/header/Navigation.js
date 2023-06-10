@@ -18,8 +18,6 @@ import Container from "@mui/material/Container";
 import Logo from "../../Logo";
 import Lang from "../../../lang/en.json";
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -101,7 +99,11 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  sx={{ textTransform: "none!important" }}
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
+                >
                   <Link
                     to={page.url}
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -138,7 +140,12 @@ function ResponsiveAppBar() {
                 component={Link}
                 to={page.url}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textTransform: "none",
+                }}
               >
                 {page.name}
               </Button>

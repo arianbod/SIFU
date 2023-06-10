@@ -6,9 +6,14 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+// import "./fonts/poppins.css";
+
 import Navigation from "./components/structure/header/Navigation.js";
 import Slider from "./components/structure/body/1_Slider.js";
 const darkTheme = createTheme({
+  typography: {
+    fontFamily: "Poppins, sans-serif",
+  },
   palette: {
     mode: "dark",
     primary: {
@@ -26,18 +31,18 @@ function App() {
             justifyContent: "center",
           }}
         > */}
-          <CssBaseline />
-          <div className="App">
-            <Container maxWidth="xl">
-              <header className="App-header">
-                <Navigation />
-                {/* <Box sx={{ height: "100vh" }} /> */}
+        <CssBaseline />
+        <div className="App">
+          <Container maxWidth="xl">
+            <header className="App-header">
+              <Navigation />
+              {/* <Box sx={{ height: "100vh" }} /> */}
 
-                <Slider />
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-              </header>
-            </Container>
-          </div>
+              <Slider />
+              {/* <img src={logo} className="App-logo" alt="logo" /> */}
+            </header>
+          </Container>
+        </div>
         {/* </Box> */}
       </ThemeProvider>
     </Router>
