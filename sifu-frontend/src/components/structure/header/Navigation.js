@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="sticky">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{ backgroundColor: "#202024" }}>
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Logo />
@@ -152,7 +152,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  color: "white",
+                  color: "#C0BFD0",
                   display: "block",
                   textTransform: "none",
                 }}

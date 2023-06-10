@@ -19,5 +19,47 @@
     "Title2": "Legacy",
     "Paragpraph": "Once upon a time in the vast kingdom of Shanghua, lived a rare & majestic panda named Ming. Known for his extraordinary wisdom and unmatched martial arts skills, Ming had earned the coveted title of \"The Regal Sifu - Emperor's Advisor.\"",
     "Button": "Read more"
+  },
+  "Tokenomics": {
+    "Title1": "Sifu",
+    "Title2": "nomics",
+    "Text": "Token Supply: 1000000000",
+    "Text1": "42.5% Presale",
+    "Text2": "15% Liquidity",
+    "Text3": "10% Staking",
+    "Text4": "10% Marketing",
+    "Text5": "5% Team",
+    "Text6": "5% Advisors"
+  },
+  "Roadmap": {
+    "Title1": "The Sifu",
+    "Title2": "Journey",
+    "Step1": {
+      "Title": "Phase 1",
+      "Description": "Foundation & Launch",
+      "Items": [
+        "Establish the core team and advisors",
+        "Establish social media presence",
+        "Develop the Website & Whitepaper",
+        "Pass Audit & KYC",
+        "Finalize Private Sale & Public Sale",
+        "Launch on Ethereum Blockchain"
+      ]
+    },
+    "Step2": {
+      "Title": "Phase 2",
+      "Description": "Listing & Marketing",
+      "Items": [
+        "Listing on Decentralized & Centralized exchanges",
+        "Launch staking program to incentivize token holders",
+        "Huge Chinese & Global marketing campaigns",
+        "Forge partnerships with other known projects"
+      ]
+    },
+    "Step3": {
+      "Title": "Phase 3",
+      "Description": "Long term growth",
+      "Items": ["Launch NFT Collection", "Develop more utilities"]
+    }
   }
 }
