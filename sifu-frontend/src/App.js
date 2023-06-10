@@ -9,7 +9,14 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 // import "./fonts/poppins.css";
 
 import Navigation from "./components/structure/header/Navigation.js";
-import Slider from "./components/structure/body/1_Slider.js";
+import Slider from "./components/structure/body/1_Slider";
+import Introduction from "./components/structure/body/2_Introduction";
+import Tokenomics from "./components/structure/body/3_Tokenomics";
+import Roadmap from "./components/structure/body/4_Roadmap";
+import Team from "./components/structure/body/5_Team";
+import Connect from "./components/structure/body/6_Connect";
+import Outro from "./components/structure/body/7_Outro";
+import Footer from "./components/structure/body/8_Footer";
 const darkTheme = createTheme({
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -39,6 +46,13 @@ function App() {
               {/* <Box sx={{ height: "100vh" }} /> */}
 
               <Slider />
+              <Introduction />
+              <Tokenomics />
+              <Roadmap />
+              <Team />
+              <Connect />
+              <Outro />
+              <Footer />
               {/* <img src={logo} className="App-logo" alt="logo" /> */}
             </header>
           </Container>

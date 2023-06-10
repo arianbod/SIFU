@@ -22,7 +22,6 @@ export default function SimpleContainer() {
           height: "100vh", // Set the height to 100% of the viewport height
           alignItems: "top", // Center align the content vertically
         }}
-        id="Tokenomics"
       >
         <Box
           sx={{
@@ -36,7 +35,7 @@ export default function SimpleContainer() {
           }}
         >
           <p>{Lang.Slider.Header}</p> {/* Add your paragraph here */}
-          <h1>Tokenomics</h1> {/* Add your title here */}
+          <h1>Footer</h1> {/* Add your title here */}
           <Box sx={{ mt: 2 }}>
             <img src={SliderPic} alt="Slider" />
           </Box>

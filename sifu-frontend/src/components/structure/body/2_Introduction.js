@@ -10,11 +10,37 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* <Container maxWidth="sm"> */}
-      <Box sx={{ backgroundImage: `url(${Background})`, height: "30vh" }}>
-        <img src={SliderPic} alt="Slider picture" />
+      <Box
+        sx={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover",
+          display: "flex",
+          justifyContent: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center ",
+          width: "100%",
+          height: "100vh", // Set the height to 100% of the viewport height
+          alignItems: "top", // Center align the content vertically
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
+            maxWidth: 500,
+            margin: "0 auto", // Center align the content horizontally
+            padding: "0 16px", // Add some horizontal padding
+          }}
+        >
+          <p>{Lang.Slider.Header}</p> {/* Add your paragraph here */}
+          <h1>Introduction</h1> {/* Add your title here */}
+          <Box sx={{ mt: 2 }}>
+            <img src={SliderPic} alt="Slider" />
+          </Box>
+        </Box>
       </Box>
-      {/* </Container> */}
     </React.Fragment>
   );
 }
