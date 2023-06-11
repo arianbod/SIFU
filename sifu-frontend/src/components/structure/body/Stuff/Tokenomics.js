@@ -1,30 +1,22 @@
 import * as React from "react";
 import Lang from "../../../../lang/en.json";
-
 import {
   Grid,
-  AppBar,
+  List,
+  ListItem,
+  ListItemText,
   Box,
-  Toolbar,
-  IconButton,
   Typography,
-  Menu,
-  MenuItem,
-  Avatar,
-  Button,
-  Tooltip,
 } from "@mui/material";
+import TokenomicsItems from "./TokenomicsLists.js";
 export default function SimpleContainer() {
   return (
-    <>
-      <Grid item>
-        <Typography>{Lang.Tokenomics.Text1}</Typography>
-        <Typography>{Lang.Tokenomics.Text2}</Typography>
-        <Typography>{Lang.Tokenomics.Text3}</Typography>
-        <Typography>{Lang.Tokenomics.Text4}</Typography>
-        <Typography>{Lang.Tokenomics.Text5}</Typography>
-        <Typography>{Lang.Tokenomics.Text6}</Typography>
-      </Grid>
-    </>
+    <Grid item>
+      <List sx={{ width: "100%", maxWidth: 360 }} aria-label="contacts">
+        {Lang.Tokenomics.Items.map((item, index) => (
+          <TokenomicsItems key={index} Title={item.Title} Color={item.Color} />
+        ))}
+      </List>
+    </Grid>
   );
 }

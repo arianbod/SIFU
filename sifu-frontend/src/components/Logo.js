@@ -1,19 +1,11 @@
 import * as React from "react";
 import Stack from "@mui/material/Stack";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import Lang from "../lang/en.json";
 import LogoImage from "../assets/Logo.svg";
 export default function ImageAvatars() {
   return (
-    // <Stack direction="row" spacing={2}>
-    //   <Avatar
-    //     alt="Remy Sharp"
-    //     src="/static/images/avatar/1.jpg"
-    //     sx={{ width: 24, height: 24 }}
-    //   />
-    //   <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-    // </Stack>
-    <>
+    <Box sx={{ display: "flex" }}>
       <img
         alt={Lang.ProjectName}
         src={LogoImage}
@@ -25,17 +17,20 @@ export default function ImageAvatars() {
         component="a"
         href="/"
         sx={{
-          ml: 2,
+          paddingLeft: "16px",
+          paddingRight: "-16px",
           display: "flex",
           // fontFamily: "monospace",
           fontWeight: 700,
           // letterSpacing: ".3rem",
           color: "inherit",
           textDecoration: "none",
+          justifyContent: "top",
+          marginTop: "5px",
         }}
       >
         {Lang.ProjectName}
       </Typography>
-    </>
+    </Box>
   );
 }

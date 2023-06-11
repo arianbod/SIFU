@@ -1,6 +1,6 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Box, Typography } from "@mui/material/";
+import { Box, Typography, Grid } from "@mui/material/";
 import Container from "@mui/material/Container";
 import Lang from "../../../lang/en.json";
 import Background from "../../../assets/slider_bg.png";
@@ -34,7 +34,8 @@ export default function SimpleContainer() {
             {Lang.Team.Title2}
           </Typography>
         </Box>
-        <Box
+        <Grid
+          container
           sx={{
             // backgroundImage: `url(${Background})`,
             backgroundSize: "cover",
@@ -44,6 +45,7 @@ export default function SimpleContainer() {
             backgroundPosition: "center ",
             width: "100%",
             alignItems: "top",
+            mt: 10,
           }}
         >
           <ActionAreaCard
@@ -66,7 +68,7 @@ export default function SimpleContainer() {
             name={Lang.Team.Member4.name}
             positionRole={Lang.Team.Member4.positionRole}
           />
-        </Box>
+        </Grid>
       </Box>
     </React.Fragment>
   );

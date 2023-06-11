@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import { blue } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import Badge from "@mui/material/Badge";
+import Lang from "../../../../lang/en.json";
 function HomeIcon(props) {
   return (
     <SvgIcon {...props}>
@@ -23,7 +24,7 @@ export default function SvgIconsColor() {
       }}
     >
       <Badge
-        badgeContent={""}
+        badgeContent={Lang.Connect.Buttons.Twitter}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "right",
@@ -33,7 +34,7 @@ export default function SvgIconsColor() {
       </Badge>
 
       <Badge
-        badgeContent={"chat"}
+        badgeContent={Lang.Connect.Buttons.TelegramChannel}
         color="primary"
         anchorOrigin={{
           vertical: "bottom",
@@ -43,7 +44,7 @@ export default function SvgIconsColor() {
         <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />
       </Badge>
       <Badge
-        badgeContent={""}
+        badgeContent={Lang.Connect.Buttons.TelegramGroup}
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "right",

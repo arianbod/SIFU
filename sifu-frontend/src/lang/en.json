@@ -24,12 +24,15 @@
     "Title1": "Sifu",
     "Title2": "nomics",
     "Text": "Token Supply: 1000000000",
-    "Text1": "42.5% Presale",
-    "Text2": "15% Liquidity",
-    "Text3": "10% Staking",
-    "Text4": "10% Marketing",
-    "Text5": "5% Team",
-    "Text6": "5% Advisors"
+    "Items": [
+      { "Title": "42.5% Presale", "Color": "#CE1620" },
+      { "Title": "15% Liquidity", "Color": "#FBDCA6" },
+      { "Title": "12.5% Burn", "Color": "#F7F7FA" },
+      { "Title": "10% Staking", "Color": "#E67817" },
+      { "Title": "10% Marketing", "Color": "#FF6565" },
+      { "Title": "5% Team", "Color": "#FCAF61" },
+      { "Title": "5% Advisors", "Color": "#FFA8A8" }
+    ]
   },
   "Roadmap": {
     "Title1": "The Sifu",
@@ -74,7 +77,7 @@
     "Title1": "Get",
     "Title2": "Involved",
     "Paragpraph": "We invite you to join Regal Sifu and become an active part of our growing community. By acquiring our tokens, participating in voting events, and engaging in our programs, you'll have the opportunity to shape the future of our project. Join us today and unlock your potential in the world of cryptocurrency.",
-    "Buttons": { "Twitter": "", "TelegramChannel": "", "TelegramGroup": "" }
+    "Buttons": { "Twitter": "", "TelegramChannel": "Chat", "TelegramGroup": "" }
   },
   "Outro": {
     "Title1": "Meet Our",
@@ -82,37 +85,39 @@
     "Paragpraph": "Our mascot, the panda, symbolizes wisdom, tranquility, and strength. Pandas hold deep cultural significance in Asia and have become an icon representing our commitment to uniting the Asian community. Embracing the spirit of the panda, we strive to empower our members and create a sense of unity within our project."
   },
   "Footer": {
-    "Section1": {
-      "Title": "Regal Sifu",
-      "Links": [
-        { "Title": "Master the art of", "Url": "" },
-        { "Title": "crypto trading with", "Url": "" },
-        { "Title": "SIFU.", "Url": "" }
-      ]
-    },
-    "Section2": {
-      "Title": "",
-      "Links": [
-        { "Title": "", "Url": "" },
-        { "Title": "", "Url": "" },
-        { "Title": "", "Url": "" }
-      ]
-    },
-    "Section3": {
-      "Title": "Socials",
-      "Links": [
-        { "Title": "Documentation", "Url": "" },
-        { "Title": "Audit + KYC", "Url": "" },
-        { "Title": "Etherscan.io", "Url": "" }
-      ]
-    },
-    "Section4": {
-      "Title": "Socials",
-      "Links": [
-        { "Title": "Twitter", "Url": "" },
-        { "Title": "Telegram", "Url": "" },
-        { "Title": "Telegram chat", "Url": "" }
-      ]
-    }
+    "sections": [
+      {
+        "Title": "",
+        "Links": [
+          { "Title": "Master the art of", "Url": "", "Color": "" },
+          { "Title": "crypto trading with", "Url": "", "Color": "" },
+          { "Title": "SIFU.", "Url": "", "Color": "" }
+        ]
+      },
+      {
+        "Title": "",
+        "Links": [
+          { "Title": "", "Url": "", "Color": "" },
+          { "Title": "", "Url": "", "Color": "" },
+          { "Title": "", "Url": "", "Color": "" }
+        ]
+      },
+      {
+        "Title": "Socials",
+        "Links": [
+          { "Title": "Documentation", "Url": "", "Color": "" },
+          { "Title": "Audit + KYC", "Url": "", "Color": "" },
+          { "Title": "Etherscan.io", "Url": "", "Color": "" }
+        ]
+      },
+      {
+        "Title": "Socials",
+        "Links": [
+          { "Title": "Twitter", "Url": "", "Color": "" },
+          { "Title": "Telegram", "Url": "", "Color": "" },
+          { "Title": "Telegram chat", "Url": "", "Color": "" }
+        ]
+      }
+    ]
   }
 }
