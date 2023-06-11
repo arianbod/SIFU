@@ -1,97 +1,164 @@
-import React from "react";
-import { Grid, Typography, Divider } from "@mui/material";
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Unstable_Grid2";
+import { Typography, Button, Divider } from "@mui/material";
+import Lang from "../../../lang/en.json";
+import ActionButton from "../header/ActionButton";
+import Photo from "../../../assets/Outro_pic.png";
+import Background from "../../../assets/slider_bg.png";
+import TokenomicsPic from "../../../assets/Tokenomics_pic.svg";
+import TokenomicStuff from "./Stuff/Tokenomics";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-const Roadmap = () => {
-  const roadmapData = {
-    Step1: {
-      Title: "Phase 1",
-      Description: "Foundation & Launch",
-      Items: [
-        "Establish the core team and advisors",
-        "Establish social media presence",
-        "Develop the Website & Whitepaper",
-        "Pass Audit & KYC",
-        "Finalize Private Sale & Public Sale",
-        "Launch on Ethereum Blockchain",
-      ],
-    },
-    Step2: {
-      Title: "Phase 2",
-      Description: "Listing & Marketing",
-      Items: [
-        "Listing on Decentralized & Centralized exchanges",
-        "Launch staking program to incentivize token holders",
-        "Huge Chinese & Global marketing campaigns",
-        "Forge partnerships with other known projects",
-      ],
-    },
-    Step3: {
-      Title: "Phase 3",
-      Description: "Long term growth",
-      Items: ["Launch NFT Collection", "Develop more utilities"],
-    },
-  };
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+//   ...theme.typography.body2,
+//   padding: theme.spacing(1),
+//   textAlign: "center",
+//   color: theme.palette.text.secondary,
+// }));
 
+export default function AutoGrid() {
+  const theme = useTheme();
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={5}>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography variant="h5" component="h2">
-              {roadmapData.Step2.Title}
-            </Typography>
-            <Typography variant="subtitle1" component="h3">
-              {roadmapData.Step2.Description}
-            </Typography>
-            <ul>
-              {roadmapData.Step2.Items.map((item, index) => (
-                <Typography component="li" key={index}>
-                  {item}
-                </Typography>
-              ))}
-            </ul>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid
+        container
+        alignItems="center"
+        sx={{ display: isMdScreen ? "none" : "" }}
+      >
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Typography variant="h5" component="h2">
+                {Lang.Roadmap.Step1.Title}
+              </Typography>
+              <Typography variant="subtitle1" component="h3">
+                {Lang.Roadmap.Step1.Description}
+              </Typography>
+              <ul>
+                {Lang.Roadmap.Step1.Items.map((item, index) => (
+                  <Typography component="li" key={index}>
+                    {item}
+                  </Typography>
+                ))}
+              </ul>
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
-      <Grid item xs={2}>
-        <Divider orientation="vertical" sx={{ height: "100%" }} />
-      </Grid>
-      <Grid item xs={5}>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Typography variant="h5" component="h2">
-              {roadmapData.Step1.Title}
-            </Typography>
-            <Typography variant="subtitle1" component="h3">
-              {roadmapData.Step1.Description}
-            </Typography>
-            <ul>
-              {roadmapData.Step1.Items.map((item, index) => (
-                <Typography component="li" key={index}>
-                  {item}
-                </Typography>
-              ))}
-            </ul>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h5" component="h2">
-              {roadmapData.Step3.Title}
-            </Typography>
-            <Typography variant="subtitle1" component="h3">
-              {roadmapData.Step3.Description}
-            </Typography>
-            <ul>
-              {roadmapData.Step3.Items.map((item, index) => (
-                <Typography component="li" key={index}>
-                  {item}
-                </Typography>
-              ))}
-            </ul>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
-  );
-};
 
-export default Roadmap;
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Typography variant="h5" component="h2">
+                {Lang.Roadmap.Step2.Title}
+              </Typography>
+              <Typography variant="subtitle1" component="h3">
+                {Lang.Roadmap.Step2.Description}
+              </Typography>
+              <ul>
+                {Lang.Roadmap.Step2.Items.map((item, index) => (
+                  <Typography component="li" key={index}>
+                    {item}
+                  </Typography>
+                ))}
+              </ul>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Typography variant="h5" component="h2">
+                {Lang.Roadmap.Step3.Title}
+              </Typography>
+              <Typography variant="subtitle1" component="h3">
+                {Lang.Roadmap.Step3.Description}
+              </Typography>
+              <ul>
+                {Lang.Roadmap.Step3.Items.map((item, index) => (
+                  <Typography component="li" key={index}>
+                    {item}
+                  </Typography>
+                ))}
+              </ul>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        alignItems="center"
+        sx={{ display: isMdScreen ? "" : "none" }}
+      >
+        <Grid xs={12} md>
+          <Grid item xs={12}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h5" component="h2">
+                  {Lang.Roadmap.Step2.Title}
+                </Typography>
+                <Typography variant="subtitle1" component="h3">
+                  {Lang.Roadmap.Step2.Description}
+                </Typography>
+                <ul>
+                  {Lang.Roadmap.Step2.Items.map((item, index) => (
+                    <Typography component="li" key={index}>
+                      {item}
+                    </Typography>
+                  ))}
+                </ul>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Divider orientation="vertical" flexItem />
+
+        <Grid xs={12} md>
+          <Grid item xs={12}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h5" component="h2">
+                  {Lang.Roadmap.Step1.Title}
+                </Typography>
+                <Typography variant="subtitle1" component="h3">
+                  {Lang.Roadmap.Step1.Description}
+                </Typography>
+                <ul>
+                  {Lang.Roadmap.Step1.Items.map((item, index) => (
+                    <Typography component="li" key={index}>
+                      {item}
+                    </Typography>
+                  ))}
+                </ul>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Typography variant="h5" component="h2">
+                  {Lang.Roadmap.Step3.Title}
+                </Typography>
+                <Typography variant="subtitle1" component="h3">
+                  {Lang.Roadmap.Step3.Description}
+                </Typography>
+                <ul>
+                  {Lang.Roadmap.Step3.Items.map((item, index) => (
+                    <Typography component="li" key={index}>
+                      {item}
+                    </Typography>
+                  ))}
+                </ul>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}

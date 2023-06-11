@@ -43,7 +43,7 @@ function App() {
         > */}
         <CssBaseline />
         <div className="App">
-          <Container maxWidth="xl">
+          <Container>
             <header className="App-header">
               <Navigation />
               {/* <Box sx={{ height: "100vh" }} /> */}

@@ -20,25 +20,16 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
-export default function TokenomicsItems({ Title, Color, Url }) {
-  console.log(Title, Color);
+export default function TokenomicsItems({ Title, Url }) {
   return (
-    <ListItem disablePadding>
-      <ListItemButton>
-        <ListItemIcon>
-          {/* <Box
-            sx={{
-              bgcolor: Color,
-              width: "20px",
-              height: "20px",
-              borderRadius: "100px",
-            }}
-          /> */}
-        </ListItemIcon>
-        <a href={Url}>
-          <ListItemText primary={Title} />
-        </a>
-      </ListItemButton>
+    <ListItem style={{ paddingLeft: " 0px" }}>
+      <ListItemText>
+        <Typography variant="caption">
+          <a href={Url} className="GreyText">
+            {Title}
+          </a>
+        </Typography>
+      </ListItemText>
     </ListItem>
   );
 }
