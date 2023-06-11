@@ -13,17 +13,10 @@ import TokenomicStuff from "./Stuff/Tokenomics";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "center",
-//   color: theme.palette.text.secondary,
-// }));
-
 export default function AutoGrid() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -31,7 +24,7 @@ export default function AutoGrid() {
         alignItems="center"
         sx={{ display: isMdScreen ? "none" : "" }}
       >
-        <Grid item xs={12}>
+        <Grid item xs={12} maxWidth={400} className="RoadMapSection">
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography variant="h5" component="h2">
@@ -42,7 +35,11 @@ export default function AutoGrid() {
               </Typography>
               <ul>
                 {Lang.Roadmap.Step1.Items.map((item, index) => (
-                  <Typography component="li" key={index}>
+                  <Typography
+                    component="li"
+                    key={index}
+                    className="keypoint-circle"
+                  >
                     {item}
                   </Typography>
                 ))}
@@ -51,7 +48,7 @@ export default function AutoGrid() {
           </Grid>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} maxWidth={400} className="RoadMapSection">
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography variant="h5" component="h2">
@@ -62,7 +59,11 @@ export default function AutoGrid() {
               </Typography>
               <ul>
                 {Lang.Roadmap.Step2.Items.map((item, index) => (
-                  <Typography component="li" key={index}>
+                  <Typography
+                    component="li"
+                    key={index}
+                    className="keypoint-circle"
+                  >
                     {item}
                   </Typography>
                 ))}
@@ -70,7 +71,7 @@ export default function AutoGrid() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} maxWidth={400} className="RoadMapSection">
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography variant="h5" component="h2">
@@ -81,7 +82,11 @@ export default function AutoGrid() {
               </Typography>
               <ul>
                 {Lang.Roadmap.Step3.Items.map((item, index) => (
-                  <Typography component="li" key={index}>
+                  <Typography
+                    component="li"
+                    key={index}
+                    className="keypoint-circle"
+                  >
                     {item}
                   </Typography>
                 ))}
@@ -96,7 +101,7 @@ export default function AutoGrid() {
         sx={{ display: isMdScreen ? "" : "none" }}
       >
         <Grid xs={12} md>
-          <Grid item xs={12}>
+          <Grid item xs={12} maxWidth={400} className="RoadMapSection">
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
@@ -107,7 +112,11 @@ export default function AutoGrid() {
                 </Typography>
                 <ul>
                   {Lang.Roadmap.Step2.Items.map((item, index) => (
-                    <Typography component="li" key={index}>
+                    <Typography
+                      component="li"
+                      key={index}
+                      className="keypoint-circle"
+                    >
                       {item}
                     </Typography>
                   ))}
@@ -119,8 +128,14 @@ export default function AutoGrid() {
         <Divider orientation="vertical" flexItem />
 
         <Grid xs={12} md>
-          <Grid item xs={12}>
-            <Grid container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            maxWidth={400}
+            className="RoadMapSection"
+            style={{ marginBottom: "200px" }}
+          >
+            <Grid container>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
                   {Lang.Roadmap.Step1.Title}
@@ -130,7 +145,11 @@ export default function AutoGrid() {
                 </Typography>
                 <ul>
                   {Lang.Roadmap.Step1.Items.map((item, index) => (
-                    <Typography component="li" key={index}>
+                    <Typography
+                      component="li"
+                      key={index}
+                      className="keypoint-circle"
+                    >
                       {item}
                     </Typography>
                   ))}
@@ -138,8 +157,8 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <Grid container spacing={2}>
+          <Grid item xs={12} maxWidth={400} className="RoadMapSection">
+            <Grid container>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
                   {Lang.Roadmap.Step3.Title}
@@ -149,7 +168,11 @@ export default function AutoGrid() {
                 </Typography>
                 <ul>
                   {Lang.Roadmap.Step3.Items.map((item, index) => (
-                    <Typography component="li" key={index}>
+                    <Typography
+                      component="li"
+                      key={index}
+                      className="keypoint-circle"
+                    >
                       {item}
                     </Typography>
                   ))}

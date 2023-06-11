@@ -64,3 +64,10 @@
 .DMSans *{font-family: DMSans!important; font-weight:bold!important;}
 *{max-width: 100%;}
 .GreyText{color: #777e91 !important;text-decoration: none;}
+.keypoint-circle::marker {
+  color: red; /* Change the color of the marker */
+  font-size: 16px; /* Adjust the font size of the marker */
+  /* Add more styles as needed */
+  margin-top:10px
+}
+.RoadMapSection{background: #202024;border-radius: 10px;margin:10px;padding: 20px !important;}
