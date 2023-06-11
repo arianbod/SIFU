@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ActionButton from "./ActionButton";
 import {
   AppBar,
   Box,
@@ -11,7 +12,8 @@ import {
   Button,
   Tooltip,
 } from "@mui/material";
-import { Menu as MenuIcon } from "@mui/icons-material";
+// import { Menu as MenuIcon } from "@mui/icons-material";
+import MenuIcon from "../../../assets/Burger.svg";
 import { BrowserRouter, Link } from "react-router-dom";
 import AdbIcon from "@mui/icons-material/Adb";
 import Container from "@mui/material/Container";
@@ -51,14 +53,17 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Logo />
-          <Typography
-            variant="h6"
+
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
+          {/* <Typography
+            variant="h5"
             noWrap
             component="a"
-            href="/"
+            href=""
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
               // fontFamily: "monospace",
               fontWeight: 700,
               // letterSpacing: ".3rem",
@@ -67,23 +72,27 @@ function ResponsiveAppBar() {
             }}
           >
             {Lang.ProjectName}
-          </Typography>
-
+          </Typography> */}
           <Box
+            ClassName="phoneMenu"
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none", textAlign: "center" },
+              display: {
+                xs: "flex",
+                md: "none",
+                textAlign: "center",
+                justifyContent: "flex-end",
+              },
             }}
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <img src={MenuIcon} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -119,29 +128,11 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              // fontFamily: "monospace",
-              fontWeight: 700,
-              // letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {Lang.ProjectName}
-          </Typography>
           <Box
+            ClassName="PCMenu"
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex", textAlign: "center" },
+              display: { xs: "none", md: "flex", justifyContent: "center" },
             }}
           >
             {pages.map((page) => (
@@ -161,20 +152,8 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "100px",
-                fontSize: "10px",
-                padding: "10px 30px",
-                fontWeight: "bold",
-                textShadow: "1px 1px black",
-              }}
-            >
-              {Lang.Contact}
-            </Button>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <ActionButton />
           </Box>
         </Toolbar>
       </Container>

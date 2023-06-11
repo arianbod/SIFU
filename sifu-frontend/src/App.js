@@ -26,6 +26,9 @@ const darkTheme = createTheme({
     primary: {
       main: "#CE1620",
     },
+    background: {
+      default: "#14141A",
+    },
   },
 });
 function App() {

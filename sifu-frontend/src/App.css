@@ -29,9 +29,7 @@
 }
 
 */
-body {
-  background-color: #1e1e1e !important;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -55,3 +53,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "DMSans";
+  src: url("./fonts/DMSans-Regular.woff2") format("woff2"),
+       url("./fonts/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.DMSans{font-family: DMSans; font-weight: bold!important;}
+.DMSans *{font-family: DMSans!important; font-weight:bold!important;}

@@ -2,33 +2,36 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import Lang from "../../../lang/en.json";
 import Background from "../../../assets/slider_bg.png";
 import SliderPic from "../../../assets/Slider_pic.png";
 import { Typography } from "@mui/material";
 
 export default function SimpleContainer() {
+  const theme = useTheme();
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <React.Fragment>
+    <>
       <CssBaseline />
       <Box
         sx={{
-          paddingTop: "50px",
+          paddingTop: isMdScreen ? "200px" : "100px",
           backgroundColor: "#202024",
           backgroundImage: `url(${Background})`,
-          backgroundSize: "contain",
+          backgroundSize: isMdScreen ? "contain" : "cover",
           display: "flex",
           justifyContent: "center",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center ",
           width: "100%",
-          height: "80vh", // Set the height to 100% of the viewport height
+          height: "70vh", // Set the height to 100% of the viewport height
           alignItems: "top", // Center align the content vertically
         }}
       >
         <Box
           sx={{
-            marginTop: "1000px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -37,18 +40,24 @@ export default function SimpleContainer() {
             margin: "0 auto", // Center align the content horizontally
             padding: "0 16px", // Add some horizontal padding
           }}
+          className="DMSans"
         >
-          <Typography sx={{ color: "#777E90" }}>
+          <Typography
+            sx={{ color: "#777E90", fontWeight: "bold" }}
+            variant="h6"
+          >
             {Lang.Slider.Header}
           </Typography>
           {/* Add your paragraph here */}
-          <Typography variant="h3">{Lang.Slider.Text}</Typography>
+          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
+            {Lang.Slider.Text}
+          </Typography>
           {/* Add your title here */}
-          <Box sx={{ mt: 2 }}>
-            <img src={SliderPic} alt="Slider" />
+          <Box sx={{ mt: isMdScreen ? "50px" : "10px" }}>
+            <img src={SliderPic} alt={Lang.ProjectName} />
           </Box>
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import { Typography } from "@mui/material";
 import Lang from "../lang/en.json";
 import LogoImage from "../assets/Logo.svg";
 export default function ImageAvatars() {
@@ -19,7 +19,23 @@ export default function ImageAvatars() {
         src={LogoImage}
         // sx={{ width: 56, height: 56 }}
       />
-      {/* <img src="../assets/Logo.svg" /> */}
+      <Typography
+        variant="h6"
+        noWrap
+        component="a"
+        href="/"
+        sx={{
+          ml: 2,
+          display: "flex",
+          // fontFamily: "monospace",
+          fontWeight: 700,
+          // letterSpacing: ".3rem",
+          color: "inherit",
+          textDecoration: "none",
+        }}
+      >
+        {Lang.ProjectName}
+      </Typography>
     </>
   );
 }

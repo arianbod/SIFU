@@ -10,7 +10,7 @@
     "Staking": "Staking"
   },
   "Slider": {
-    "Header": "Memecoin from the east",
+    "Header": "Memecoin from the East",
     "Text": "Welcome to The Regal Sifu",
     "Text2": "Regal Sifu is a meme-coin built on the Ethereum blockchain."
   },
@@ -60,6 +60,59 @@
       "Title": "Phase 3",
       "Description": "Long term growth",
       "Items": ["Launch NFT Collection", "Develop more utilities"]
+    }
+  },
+  "Team": {
+    "Title1": "Sifu",
+    "Title2": "Squad",
+    "Member1": { "name": "Shaolin Monk", "positionRole": "Community leader" },
+    "Member2": { "name": "Feng Shui Guru", "positionRole": "Developer" },
+    "Member3": { "name": "Wushu Warrior", "positionRole": "Marketing officer" },
+    "Member4": { "name": "Dragon Slayer", "positionRole": "Designer" }
+  },
+  "Connect": {
+    "Title1": "Get",
+    "Title2": "Involved",
+    "Paragpraph": "We invite you to join Regal Sifu and become an active part of our growing community. By acquiring our tokens, participating in voting events, and engaging in our programs, you'll have the opportunity to shape the future of our project. Join us today and unlock your potential in the world of cryptocurrency.",
+    "Buttons": { "Twitter": "", "TelegramChannel": "", "TelegramGroup": "" }
+  },
+  "Outro": {
+    "Title1": "Meet Our",
+    "Title2": "Mascot",
+    "Paragpraph": "Our mascot, the panda, symbolizes wisdom, tranquility, and strength. Pandas hold deep cultural significance in Asia and have become an icon representing our commitment to uniting the Asian community. Embracing the spirit of the panda, we strive to empower our members and create a sense of unity within our project."
+  },
+  "Footer": {
+    "Section1": {
+      "Title": "Regal Sifu",
+      "Links": [
+        { "Title": "Master the art of", "Url": "" },
+        { "Title": "crypto trading with", "Url": "" },
+        { "Title": "SIFU.", "Url": "" }
+      ]
+    },
+    "Section2": {
+      "Title": "",
+      "Links": [
+        { "Title": "", "Url": "" },
+        { "Title": "", "Url": "" },
+        { "Title": "", "Url": "" }
+      ]
+    },
+    "Section3": {
+      "Title": "Socials",
+      "Links": [
+        { "Title": "Documentation", "Url": "" },
+        { "Title": "Audit + KYC", "Url": "" },
+        { "Title": "Etherscan.io", "Url": "" }
+      ]
+    },
+    "Section4": {
+      "Title": "Socials",
+      "Links": [
+        { "Title": "Twitter", "Url": "" },
+        { "Title": "Telegram", "Url": "" },
+        { "Title": "Telegram chat", "Url": "" }
+      ]
     }
   }
 }

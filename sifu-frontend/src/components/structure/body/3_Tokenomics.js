@@ -1,64 +1,36 @@
 import * as React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Container from "@mui/material/Container";
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Unstable_Grid2";
+import { Typography, Button } from "@mui/material";
 import Lang from "../../../lang/en.json";
+import ActionButton from "../header/ActionButton";
+import Photo from "../../../assets/Outro_pic.png";
 import Background from "../../../assets/slider_bg.png";
 import TokenomicsPic from "../../../assets/Tokenomics_pic.svg";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  MenuItem,
-  Avatar,
-  Button,
-  Tooltip,
-} from "@mui/material";
-export default function SimpleContainer() {
+import TokenomicStuff from "./Stuff/Tokenomics";
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+//   ...theme.typography.body2,
+//   padding: theme.spacing(1),
+//   textAlign: "center",
+//   color: theme.palette.text.secondary,
+// }));
+
+export default function AutoGrid() {
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <Box
-        sx={{
-          // backgroundImage: `url(${Background})`,
-          backgroundSize: "cover",
-          display: "flex",
-          justifyContent: "",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center ",
-          width: "100%",
-          height: "100vh", // Set the height to 100% of the viewport height
-          alignItems: "top", // Center align the content vertically
-        }}
-        id="Tokenomics"
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row-reverse",
-            alignItems: "flex-start",
-            textAlign: "center",
-            maxWidth: 500,
-            margin: "0 auto", // Center align the content horizontally
-            padding: "0 16px", // Add some horizontal padding
-          }}
-        >
-          <Typography sx={{ display: "inline" }} variant="h2">
-            {Lang.Tokenomics.Title2}
-          </Typography>
-          <Typography sx={{ display: "inline" }} variant="h2" color="primary">
-            {Lang.Tokenomics.Title1}
-          </Typography>
-          <Typography sx={{ display: "block" }} variant="h2" color="primary">
-            {Lang.Tokenomics.Text}
-          </Typography>
-          <Box sx={{ mt: 2 }}>
-            <img src={TokenomicsPic} alt="Slider" />
-          </Box>
-        </Box>
-      </Box>
-    </React.Fragment>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={3}>
+        <Grid xs={12} md>
+          {/* <Item> */}
+          <img src={TokenomicsPic} alt={Lang.Tokenomics.Title2} />
+          {/* </Item> */}
+        </Grid>
+        <Grid xs={12} md>
+          <TokenomicStuff />
+        </Grid>
+      </Grid>
+    </Box>
   );
 }

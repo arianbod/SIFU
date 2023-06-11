@@ -35,11 +35,18 @@ export default function SimpleContainer() {
             padding: "0 16px", // Add some horizontal padding
           }}
         >
-          <Box>
-            <Typography sx={{ display: "inline" }} variant="h2">
+          <Box className="DMSans">
+            <Typography
+              sx={{ display: "inline", fontWeight: "bold" }}
+              variant="h2"
+            >
               {Lang.Introduction.Title1}
             </Typography>
-            <Typography sx={{ display: "inline" }} variant="h2" color="primary">
+            <Typography
+              sx={{ display: "inline", fontWeight: "bold" }}
+              variant="h2"
+              color="primary"
+            >
               {Lang.Introduction.Title2}
             </Typography>
           </Box>
