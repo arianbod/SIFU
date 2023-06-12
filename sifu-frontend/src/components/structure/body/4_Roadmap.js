@@ -18,7 +18,29 @@ export default function AutoGrid() {
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        // maxWidth: 500,
+        margin: "12.5% auto", // Center align the content horizontally
+        padding: "0 16px", // Add some horizontal padding
+      }}
+    >
+      <Box className="DMSans">
+        <Typography sx={{ display: "inline", fontWeight: "bold" }} variant="h2">
+          {Lang.Roadmap.Title1}
+        </Typography>
+        <Typography
+          sx={{ display: "inline", fontWeight: "bold" }}
+          variant="h2"
+          color="primary"
+        >
+          {Lang.Roadmap.Title2}
+        </Typography>
+      </Box>
       <Grid
         container
         alignItems="center"
