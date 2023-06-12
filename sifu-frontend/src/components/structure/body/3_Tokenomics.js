@@ -47,13 +47,13 @@ export default function AutoGrid() {
           {Lang.Tokenomics.Title2}
         </Typography>
       </Box>
-      <Grid container alignItems="center">
+      <Grid container alignItems="center" spacing={12}>
         <Grid xs={12} md style={{ textAlign: "center" }}>
           {/* <Item> */}
           <img
             src={TokenomicsPic}
             alt={Lang.Tokenomics.Title2}
-            style={{ width: isMdScreen ? "500px" : "80%" }}
+            style={{ width: isMdScreen ? "600px" : "80%" }}
           />
           {/* </Item> */}
         </Grid>
