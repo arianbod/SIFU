@@ -23,7 +23,6 @@ export default function AutoGrid() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        textAlign: "center",
         // maxWidth: 500,
         margin: "12.5% auto", // Center align the content horizontally
         padding: "0 16px", // Add some horizontal padding
@@ -123,7 +122,7 @@ export default function AutoGrid() {
         alignContent="center"
         sx={{ display: isMdScreen ? "" : "none" }}
       >
-        <Grid xs={12} md={3}>
+        <Grid xs={12} md={5}>
           <Grid item xs={12} className="RoadMapSection">
             <Grid
               container
@@ -155,7 +154,7 @@ export default function AutoGrid() {
         </Grid>
         <Divider orientation="vertical" flexItem />
 
-        <Grid xs={12} md={3}>
+        <Grid xs={12} md={5}>
           <Grid
             item
             xs={12}
