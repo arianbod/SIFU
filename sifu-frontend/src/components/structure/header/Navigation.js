@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
                   onClick={handleCloseNavMenu}
                 >
                   <Link
-                    to={page.url}
+                    href={page.url}
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
                     {page.name}

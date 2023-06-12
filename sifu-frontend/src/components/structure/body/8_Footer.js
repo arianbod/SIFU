@@ -11,11 +11,11 @@ export default function AutoGrid() {
   return (
     <Box
       sx={{
-        backgroundImage: `url(${Background})`,
-        backgroundSize: "cover",
         justifyContent: "center",
-        backgroundRepeat: "no-repeat",
+        // backgroundImage: `url(${Background})`,
+        backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Grid container spacing={1} display="flex">

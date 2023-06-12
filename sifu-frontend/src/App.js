@@ -17,6 +17,7 @@ import Team from "./components/structure/body/5_Team";
 import Connect from "./components/structure/body/6_Connect";
 import Outro from "./components/structure/body/7_Outro";
 import Footer from "./components/structure/body/8_Footer";
+import FooterBg from "./assets/Footer_bg.png";
 const darkTheme = createTheme({
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -43,7 +44,7 @@ function App() {
         > */}
         <CssBaseline />
         <div className="App">
-          <Container>
+          <Container maxWidth="xl">
             <header className="App-header">
               <Navigation />
               {/* <Box sx={{ height: "100vh" }} /> */}
@@ -54,8 +55,18 @@ function App() {
               <Roadmap />
               <Team />
               <Connect />
-              <Outro />
-              <Footer />
+              <Box
+                sx={{
+                  backgroundImage: `url(${FooterBg})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  padding: "20px",
+                }}
+              >
+                <Outro />
+                <Footer />
+              </Box>
               {/* <img src={logo} className="App-logo" alt="logo" /> */}
             </header>
           </Container>
