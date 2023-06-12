@@ -13,12 +13,12 @@ export default function SimpleContainer() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <>
+    <Container maxWidth="xl">
       <CssBaseline />
       <Box
         sx={{
-          paddingTop: isMdScreen ? "200px" : "100px",
-          backgroundColor: "#202024",
+          paddingTop: isMdScreen ? "150px" : "100px",
+          // backgroundColor: "#202024",
           backgroundImage: `url(${Background})`,
           backgroundSize: isMdScreen ? "contain" : "cover",
           display: "flex",
@@ -58,6 +58,6 @@ export default function SimpleContainer() {
           </Box>
         </Box>
       </Box>
-    </>
+    </Container>
   );
 }

@@ -6,6 +6,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import BackgroundSlider from "./assets/slider_bg.png";
 // import "./fonts/poppins.css";
 
 import Navigation from "./components/structure/header/Navigation.js";
@@ -32,7 +35,10 @@ const darkTheme = createTheme({
     },
   },
 });
+
 function App() {
+  const theme = useTheme();
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Router>
       <ThemeProvider theme={darkTheme}>
@@ -44,32 +50,43 @@ function App() {
         > */}
         <CssBaseline />
         <div className="App">
-          <Container maxWidth="xl">
-            <header className="App-header">
+          {/* <Container maxWidth="xl"> */}
+          <header className="App-header">
+            <Box
+              sx={{
+                // backgroundColor: "#202024",
+                backgroundImage: `url(${BackgroundSlider})`,
+                backgroundSize: isMdScreen ? "contain" : "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center ",
+                width: "100%",
+              }}
+            >
               <Navigation />
-              {/* <Box sx={{ height: "100vh" }} /> */}
-
               <Slider />
-              <Introduction />
-              <Tokenomics />
-              <Roadmap />
-              <Team />
-              <Connect />
-              <Box
-                sx={{
-                  backgroundImage: `url(${FooterBg})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  padding: "20px",
-                }}
-              >
-                <Outro />
-                <Footer />
-              </Box>
-              {/* <img src={logo} className="App-logo" alt="logo" /> */}
-            </header>
-          </Container>
+            </Box>
+          </header>
+          {/* <Box sx={{ height: "100vh" }} /> */}
+
+          <Introduction />
+          <Tokenomics />
+          <Roadmap />
+          <Team />
+          <Connect />
+          <Box
+            sx={{
+              backgroundImage: `url(${FooterBg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              padding: "20px",
+            }}
+          >
+            <Outro />
+            <Footer />
+          </Box>
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          {/* </Container> */}
         </div>
         {/* </Box> */}
       </ThemeProvider>
