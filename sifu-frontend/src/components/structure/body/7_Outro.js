@@ -17,7 +17,16 @@ import Photo from "../../../assets/Outro_pic.png";
 
 export default function AutoGrid() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        // maxWidth: 500,
+        margin: "12.5% auto", // Center align the content horizontally
+        padding: "0 16px", // Add some horizontal padding
+      }}
+    >
       <Grid container spacing={3}>
         <Grid xs={12} md>
           {/* <Item> */}
@@ -34,7 +43,7 @@ export default function AutoGrid() {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center ",
               width: "100%",
-              height: "50vh", // Set the height to 100% of the viewport height
+              // height: "50vh", // Set the height to 100% of the viewport height
               alignItems: "top", // Center align the content vertically
             }}
           >
