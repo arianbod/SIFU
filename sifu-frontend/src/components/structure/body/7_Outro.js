@@ -32,7 +32,7 @@ export default function AutoGrid() {
         }}
       >
         <Grid container spacing={2}>
-          <Grid xs={12} md>
+          <Grid xs={12} md sx={{ textAlign: "center" }}>
             {/* <Item> */}
             <img src={Photo} alt={Lang.Outro.Title2} />
             {/* </Item> */}
