@@ -94,7 +94,7 @@ function App() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              padding: "20px",
+              padding: "10px",
             }}
           >
             <Outro />

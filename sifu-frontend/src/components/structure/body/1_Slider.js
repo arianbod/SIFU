@@ -5,59 +5,61 @@ import Container from "@mui/material/Container";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Lang from "../../../lang/en.json";
-import Background from "../../../assets/slider_bg.png";
 import SliderPic from "../../../assets/Slider_pic.png";
 import { Typography } from "@mui/material";
 
 export default function SimpleContainer() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
+  const issmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Container maxWidth="xl">
-      <CssBaseline />
-      <Box
-        sx={{
-          paddingTop: isMdScreen ? "150px" : "100px",
-          // backgroundColor: "#202024",
-          // backgroundImage: `url(${Background})`,
-          backgroundSize: isMdScreen ? "contain" : "cover",
-          display: "flex",
-          justifyContent: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center ",
-          width: "100%",
-          height: "70vh", // Set the height to 100% of the viewport height
-          alignItems: "top", // Center align the content vertically
-        }}
-      >
+    <div id="Home">
+      <Container maxWidth="xl">
+        <CssBaseline />
         <Box
           sx={{
+            paddingTop: isMdScreen ? "150px" : "100px",
+            backgroundSize: isMdScreen ? "contain" : "cover",
             display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
-            // maxWidth: 500,
-            margin: "0 auto", // Center align the content horizontally
-            padding: "0 16px", // Add some horizontal padding
+            justifyContent: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center ",
+            width: "100%",
+
+            alignItems: "top",
           }}
-          className="DMSans"
         >
-          <Typography
-            sx={{ color: "#777E90", fontWeight: "bold" }}
-            variant="h6"
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              textAlign: "center",
+
+              margin: "0 auto",
+              padding: "0 16px",
+            }}
+            className="DMSans"
           >
-            {Lang.Slider.Header}
-          </Typography>
-          {/* Add your paragraph here */}
-          <Typography variant="h2" sx={{ fontWeight: "bold" }}>
-            {Lang.Slider.Text}
-          </Typography>
-          {/* Add your title here */}
-          <Box sx={{ mt: isMdScreen ? "50px" : "10px" }}>
-            <img src={SliderPic} alt={Lang.ProjectName} />
+            <Typography
+              sx={{ color: "#777E90", fontWeight: "bold" }}
+              variant={issmScreen ? "h5" : "caption"}
+            >
+              {Lang.Slider.Header}
+            </Typography>
+
+            <Typography
+              variant={issmScreen ? "h2" : "h4"}
+              sx={{ fontWeight: "bold" }}
+            >
+              {Lang.Slider.Text}
+            </Typography>
+            <Box sx={{ mt: isMdScreen ? "50px" : "10px" }}>
+              <img src={SliderPic} alt={Lang.ProjectName} />
+            </Box>
           </Box>
         </Box>
-      </Box>
-    </Container>
+      </Container>
+    </div>
   );
 }

@@ -14,7 +14,7 @@ export default function ActionAreaCard({ photo, name, positionRole }) {
           // width="100px"
           image={photo}
           alt="green iguana"
-          sx={{ maxWidth: "200px", margin: 5 }}
+          sx={{ maxWidth: "300px", padding: 5 }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

@@ -1,13 +1,17 @@
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+
 import Lang from "../../../lang/en.json";
 import Background from "../../../assets/cloud.png";
-import { Lan } from "@mui/icons-material";
-import { Typography, Button } from "@mui/material";
 
+import { Typography, Button } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 export default function SimpleContainer() {
+  const theme = useTheme();
+
+  const issmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <div id="About">
       <CssBaseline />
@@ -38,20 +42,23 @@ export default function SimpleContainer() {
           <Box className="DMSans">
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}
-              variant="h2"
+              variant={issmScreen ? "h2" : "h4"}
             >
               {Lang.Introduction.Title1}
             </Typography>
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}
-              variant="h2"
+              variant={issmScreen ? "h2" : "h4"}
               color="primary"
             >
               {Lang.Introduction.Title2}
             </Typography>
           </Box>
           {/* Add your title here */}
-          <p>{Lang.Introduction.Paragpraph}</p> {/* Add your paragraph here */}
+          <Typography variant={issmScreen ? "body" : "body2"}>
+            {Lang.Introduction.Paragpraph}
+          </Typography>{" "}
+          {/* Add your paragraph here */}
           <Box sx={{ mt: 2 }}>
             {" "}
             <Button

@@ -1,16 +1,16 @@
 import * as React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
+
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
+
 import Lang from "../../../lang/en.json";
 import Background from "../../../assets/cloud.png";
-import { Lan } from "@mui/icons-material";
-import { Typography, Button } from "@mui/material";
+import { Typography, useTheme, useMediaQuery } from "@mui/material";
 import SocialButtons from "./Stuff/Connect";
 export default function SimpleContainer() {
+  const theme = useTheme();
+  const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <div id="Connect">
-      <CssBaseline />
       <Box
         sx={{
           backgroundImage: `url(${Background})`,
@@ -20,8 +20,7 @@ export default function SimpleContainer() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center ",
           width: "100%",
-          height: "50vh", // Set the height to 100% of the viewport height
-          alignItems: "top", // Center align the content vertically
+          alignItems: "center", // Center align the content vertically
         }}
       >
         <Box
@@ -38,13 +37,13 @@ export default function SimpleContainer() {
           <Box className="DMSans">
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}
-              variant="h2"
+              variant={isSmScreen ? "h2" : "h4"}
             >
               {Lang.Connect.Title1} &nbsp;
             </Typography>
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}
-              variant="h2"
+              variant={isSmScreen ? "h2" : "h4"}
               color="primary"
             >
               {Lang.Connect.Title2}

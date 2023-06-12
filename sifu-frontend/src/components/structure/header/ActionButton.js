@@ -1,21 +1,6 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  MenuItem,
-  Avatar,
-  Button,
-  Tooltip,
-} from "@mui/material";
+import React from "react";
+import { Box, Button } from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
-import { BrowserRouter, Link } from "react-router-dom";
-import AdbIcon from "@mui/icons-material/Adb";
-import Container from "@mui/material/Container";
-import Logo from "../../Logo";
 import Lang from "../../../lang/en.json";
 
 function ActionButton() {

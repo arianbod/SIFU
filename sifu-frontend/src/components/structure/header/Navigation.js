@@ -5,18 +5,13 @@ import {
   Box,
   Toolbar,
   IconButton,
-  Typography,
   Menu,
   MenuItem,
-  Avatar,
   Button,
-  Tooltip,
 } from "@mui/material";
 // import { Menu as MenuIcon } from "@mui/icons-material";
 import MenuIcon from "../../../assets/Burger.svg";
-import { BrowserRouter, Link } from "react-router-dom";
-import AdbIcon from "@mui/icons-material/Adb";
-import Container from "@mui/material/Container";
+import { Link } from "react-router-dom";
 import Logo from "../../Logo";
 import Lang from "../../../lang/en.json";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -51,7 +46,7 @@ function ResponsiveAppBar() {
     <AppBar
       position="relative"
       style={{
-        maxWidth: "1350px",
+        maxWidth: "1200px",
         textAlign: "center",
         margin: "auto",
         boxShadow: "none",
@@ -63,25 +58,6 @@ function ResponsiveAppBar() {
         {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
         <Logo />
 
-        {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-        {/* <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              // fontFamily: "monospace",
-              fontWeight: 700,
-              // letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            {Lang.ProjectName}
-          </Typography> */}
         <Box
           ClassName="phoneMenu"
           sx={{
@@ -122,18 +98,23 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <MenuItem
-                sx={{ textTransform: "none!important" }}
-                key={page.name}
-                onClick={handleCloseNavMenu}
+              <AnchorLink
+                href={page.url}
+                style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Link
-                  href={page.url}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                <MenuItem
+                  sx={{ textTransform: "none!important" }}
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
                 >
-                  {page.name}
-                </Link>
-              </MenuItem>
+                  <Link
+                    href={page.url}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {page.name}
+                  </Link>
+                </MenuItem>
+              </AnchorLink>
             ))}
           </Menu>
         </Box>
@@ -170,7 +151,7 @@ function ResponsiveAppBar() {
           <ActionButton />
         </Box>
       </Toolbar>
-      {/* </Container> */}
+   
     </AppBar>
   );
 }

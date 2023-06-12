@@ -1,5 +1,4 @@
 import * as React from "react";
-import Stack from "@mui/material/Stack";
 import { Typography, Box } from "@mui/material";
 import Lang from "../lang/en.json";
 import LogoImage from "../assets/Logo.svg";

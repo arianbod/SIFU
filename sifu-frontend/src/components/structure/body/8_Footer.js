@@ -1,17 +1,15 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
-import { Box, Typography, List, ListItem, ListItemText } from "@mui/material/";
-import Paper from "@mui/material/Paper";
+import { Box, Typography, List } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import Lang from "../../../lang/en.json";
 import Logo from "../../Logo";
-import Background from "../../../assets/Roadmap_bg.png";
 import FooterSectionItems from "./Stuff/FooterSectionItems";
 export default function AutoGrid() {
   return (
     <div id="Staking">
       <Box
         sx={{
+          mt: 3,
           justifyContent: "center",
           // backgroundImage: `url(${Background})`,
           backgroundSize: "cover",
