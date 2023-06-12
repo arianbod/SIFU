@@ -98,11 +98,17 @@ export default function AutoGrid() {
       <Grid
         container
         alignItems="center"
+        alignContent="center"
         sx={{ display: isMdScreen ? "" : "none" }}
       >
-        <Grid xs={12} md>
-          <Grid item xs={12} maxWidth={400} className="RoadMapSection">
-            <Grid container spacing={2}>
+        <Grid xs={12} md={3}>
+          <Grid item xs={12} className="RoadMapSection">
+            <Grid
+              container
+              spacing={2}
+              alignContent="center"
+              alignItems="center"
+            >
               <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
                   {Lang.Roadmap.Step2.Title}
@@ -127,11 +133,10 @@ export default function AutoGrid() {
         </Grid>
         <Divider orientation="vertical" flexItem />
 
-        <Grid xs={12} md>
+        <Grid xs={12} md={3}>
           <Grid
             item
             xs={12}
-            maxWidth={400}
             className="RoadMapSection"
             style={{ marginBottom: "200px" }}
           >
@@ -157,7 +162,7 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} maxWidth={400} className="RoadMapSection">
+          <Grid item xs={12} className="RoadMapSection">
             <Grid container>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h2">
