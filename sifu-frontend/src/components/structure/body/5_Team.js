@@ -17,7 +17,6 @@ export default function SimpleContainer() {
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <div id="Team">
-      <CssBaseline />
       <Box
         sx={{
           display: "flex",
@@ -25,8 +24,8 @@ export default function SimpleContainer() {
           alignItems: "center",
           textAlign: "center",
           // maxWidth: 500,
-          margin: "12.5% auto", // Center align the content horizontally
-          padding: "0 16px", // Add some horizontal padding
+          margin: "2% auto", // Center align the content horizontally
+          // padding: "0 16px", // Add some horizontal padding
         }}
       >
         <Box className="DMSans">

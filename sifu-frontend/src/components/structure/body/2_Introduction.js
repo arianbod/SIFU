@@ -24,7 +24,7 @@ export default function SimpleContainer() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center ",
           width: "100%",
-          height: "50vh", // Set the height to 100% of the viewport height
+
           alignItems: "top", // Center align the content vertically
         }}
       >
