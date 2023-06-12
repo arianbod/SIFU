@@ -19,7 +19,7 @@ export default function SimpleContainer() {
         sx={{
           paddingTop: isMdScreen ? "150px" : "100px",
           // backgroundColor: "#202024",
-          backgroundImage: `url(${Background})`,
+          // backgroundImage: `url(${Background})`,
           backgroundSize: isMdScreen ? "contain" : "cover",
           display: "flex",
           justifyContent: "center",

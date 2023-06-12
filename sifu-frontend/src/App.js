@@ -39,6 +39,7 @@ const darkTheme = createTheme({
 function App() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
+  const isxlScreen = useMediaQuery(theme.breakpoints.up("xl"));
   return (
     <Router>
       <ThemeProvider theme={darkTheme}>
@@ -56,10 +57,12 @@ function App() {
               sx={{
                 // backgroundColor: "#202024",
                 backgroundImage: `url(${BackgroundSlider})`,
-                backgroundSize: isMdScreen ? "contain" : "cover",
+                backgroundSize: isxlScreen ? "contain" : "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center ",
                 width: "100%",
+                borderRadius: "20px",
+                padding: "10px",
               }}
             >
               <Navigation />
