@@ -25,7 +25,7 @@ export default function AutoGrid() {
           flexDirection: "column",
           alignItems: "center",
           // maxWidth: 500,
-          margin: "12.5% auto", // Center align the content horizontally
+          margin: "auto", // Center align the content horizontally
           padding: "0 16px", // Add some horizontal padding
         }}
       >
