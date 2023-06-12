@@ -13,7 +13,7 @@ import CardImage4 from "../../../assets/Team/4.png";
 
 export default function SimpleContainer() {
   return (
-    <React.Fragment>
+    <div id="Team">
       <CssBaseline />
       <Box
         sx={{
@@ -70,6 +70,6 @@ export default function SimpleContainer() {
           />
         </Grid>
       </Box>
-    </React.Fragment>
+    </div>
   );
 }

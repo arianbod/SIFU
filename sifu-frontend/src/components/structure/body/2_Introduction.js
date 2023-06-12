@@ -9,7 +9,7 @@ import { Typography, Button } from "@mui/material";
 
 export default function SimpleContainer() {
   return (
-    <React.Fragment>
+    <div id="About">
       <CssBaseline />
       <Box
         sx={{
@@ -69,6 +69,6 @@ export default function SimpleContainer() {
           </Box>
         </Box>
       </Box>
-    </React.Fragment>
+    </div>
   );
 }

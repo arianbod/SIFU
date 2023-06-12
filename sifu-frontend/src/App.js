@@ -9,6 +9,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import BackgroundSlider from "./assets/slider_bg.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 // import "./fonts/poppins.css";
 
 import Navigation from "./components/structure/header/Navigation.js";
@@ -21,6 +22,7 @@ import Connect from "./components/structure/body/6_Connect";
 import Outro from "./components/structure/body/7_Outro";
 import Footer from "./components/structure/body/8_Footer";
 import FooterBg from "./assets/Footer_bg.png";
+import RoadmapBg from "./assets/Roadmap_bg.png";
 const darkTheme = createTheme({
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -73,8 +75,18 @@ function App() {
 
           <Introduction />
           <Tokenomics />
-          <Roadmap />
-          <Team />
+          <Box
+            sx={{
+              backgroundImage: `url(${FooterBg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              padding: "20px",
+            }}
+          >
+            <Roadmap />
+            <Team />
+          </Box>
           <Connect />
           <Box
             sx={{

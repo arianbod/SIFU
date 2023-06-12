@@ -19,7 +19,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Container from "@mui/material/Container";
 import Logo from "../../Logo";
 import Lang from "../../../lang/en.json";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -145,20 +145,25 @@ function ResponsiveAppBar() {
           }}
         >
           {pages.map((page) => (
-            <Button
-              key={page.name}
-              component={Link}
-              to={page.url}
-              onClick={handleCloseNavMenu}
-              sx={{
-                my: 2,
-                color: "#C0BFD0",
-                display: "block",
-                textTransform: "none",
-              }}
+            <AnchorLink
+              href={page.url}
+              style={{ textDecoration: "none", color: "inherit" }}
             >
-              {page.name}
-            </Button>
+              <Button
+                key={page.name}
+                component={Link}
+                to={page.url}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "#C0BFD0",
+                  display: "block",
+                  textTransform: "none",
+                }}
+              >
+                {page.name}
+              </Button>
+            </AnchorLink>
           ))}
         </Box>
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
