@@ -35,7 +35,7 @@ export default function SimpleContainer() {
             alignItems: "center",
             textAlign: "center",
             maxWidth: 500,
-            margin: "12.5% auto", // Center align the content horizontally
+            margin: "2.5% auto", // Center align the content horizontally
             padding: "0 16px", // Add some horizontal padding
           }}
         >
