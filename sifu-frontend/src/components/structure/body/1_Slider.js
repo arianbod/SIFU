@@ -18,7 +18,8 @@ export default function SimpleContainer() {
         <CssBaseline />
         <Box
           sx={{
-            paddingTop: isMdScreen ? "150px" : "100px",
+            paddingTop: isMdScreen ? "80px" : "50px",
+            paddingBottom: isMdScreen ? "80px" : "50px",
             backgroundSize: isMdScreen ? "contain" : "cover",
             display: "flex",
             justifyContent: "center",

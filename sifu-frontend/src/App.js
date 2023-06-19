@@ -54,7 +54,7 @@ function App() {
         <CssBaseline />
         <div className="App">
           {/* <Container maxWidth="xl"> */}
-          <header className="App-header">
+          <header className="App-header mb">
             <Box
               sx={{
                 // backgroundColor: "#202024",
@@ -72,34 +72,45 @@ function App() {
             </Box>
           </header>
           {/* <Box sx={{ height: "100vh" }} /> */}
-
-          <Introduction />
-          <Tokenomics />
-          <Box
-            sx={{
-              backgroundImage: `url(${FooterBg})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              padding: "20px",
-            }}
-          >
-            <Roadmap />
+          <div className="mt">
+            <Introduction />
+          </div>
+          <div className="mt">
+            <Tokenomics />
+          </div>
+          <div className="mt">
+            <Box
+              sx={{
+                backgroundImage: `url(${FooterBg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                padding: "20px",
+              }}
+            >
+              <Roadmap />
+            </Box>
+          </div>
+          <div className="mt">
             <Team />
-          </Box>
-          <Connect />
-          <Box
-            sx={{
-              backgroundImage: `url(${FooterBg})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              padding: "10px",
-            }}
-          >
-            <Outro />
-            <Footer />
-          </Box>
+          </div>
+          <div className="mt">
+            <Connect />
+          </div>
+          <div className="mt">
+            <Box
+              sx={{
+                backgroundImage: `url(${FooterBg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                padding: "10px",
+              }}
+            >
+              <Outro />
+              <Footer />
+            </Box>
+          </div>
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           {/* </Container> */}
         </div>

@@ -12,18 +12,18 @@ export default function AutoGrid() {
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <div id="Roadmap">
+    <div id="Roadmap" className="mt mb">
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-         
+
           margin: "auto", // Center align the content horizontally
           padding: "0 16px", // Add some horizontal padding
         }}
       >
-        <Box className="DMSans">
+        <Box className="DMSans mb">
           <Typography
             sx={{ display: "inline", fontWeight: "bold" }}
             variant={isSmScreen ? "h2" : "h4"}
@@ -39,6 +39,7 @@ export default function AutoGrid() {
           </Typography>
         </Box>
         <Grid
+          className="mt"
           container
           alignItems="center"
           sx={{ display: isMdScreen ? "none" : "" }}
@@ -150,7 +151,7 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" flexItem sx={{ margin: "50px" }} />
 
           <Grid xs={12} md={5}>
             <Grid

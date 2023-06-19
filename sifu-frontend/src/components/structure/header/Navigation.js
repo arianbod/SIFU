@@ -46,7 +46,7 @@ function ResponsiveAppBar() {
     <AppBar
       position="relative"
       style={{
-        maxWidth: "1200px",
+        maxWidth: "1100px",
         textAlign: "center",
         margin: "auto",
         boxShadow: "none",
@@ -151,7 +151,7 @@ function ResponsiveAppBar() {
           <ActionButton />
         </Box>
       </Toolbar>
-   
+
     </AppBar>
   );
 }

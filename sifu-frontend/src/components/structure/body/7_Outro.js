@@ -41,6 +41,7 @@ export default function AutoGrid() {
             {/* <Item> */}
             <Box
               sx={{
+                paddingTop: "70px",
                 backgroundSize: "contain",
                 display: "flex",
                 justifyContent: "center",

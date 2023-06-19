@@ -16,7 +16,7 @@ export default function SimpleContainer() {
 
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <div id="Team">
+    <div id="Team" >
       <Box
         sx={{
           display: "flex",
@@ -46,7 +46,6 @@ export default function SimpleContainer() {
         <Grid
           container
           sx={{
-           
             backgroundSize: "cover",
             display: "flex",
             justifyContent: "center",
@@ -54,7 +53,7 @@ export default function SimpleContainer() {
             backgroundPosition: "center ",
             width: "100%",
             alignItems: "top",
-            mt: 1,
+            mt: 7,
           }}
         >
           <ActionAreaCard

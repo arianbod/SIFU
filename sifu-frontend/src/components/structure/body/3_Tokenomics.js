@@ -20,7 +20,7 @@ export default function AutoGrid() {
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <div id="Tokenomics">
+    <div id="Tokenomics" className="mb">
       <Box
         sx={{
           display: "flex",
@@ -32,32 +32,45 @@ export default function AutoGrid() {
           padding: "0 16px", // Add some horizontal padding
         }}
       >
-        <Box className="DMSans">
-          <Typography
-            sx={{ display: "inline", fontWeight: "bold" }}
-            variant={isSmScreen ? "h2" : "h4"}
-          >
-            {Lang.Tokenomics.Title1}
-          </Typography>
-          <Typography
-            sx={{ display: "inline", fontWeight: "bold" }}
-            variant={isSmScreen ? "h2" : "h4"}
-            color="primary"
-          >
-            {Lang.Tokenomics.Title2}
-          </Typography>
+        <Box className="DMSans mb">
+          <Box>
+            <Typography
+              sx={{ display: "inline", fontWeight: "bold" }}
+              variant={isSmScreen ? "h2" : "h4"}
+            >
+              {Lang.Tokenomics.Title1}
+            </Typography>
+            <Typography
+              sx={{ display: "inline", fontWeight: "bold" }}
+              variant={isSmScreen ? "h2" : "h4"}
+              color="primary"
+            >
+              {Lang.Tokenomics.Title2}
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{ display: "inline", fontWeight: "bold" }}
+              variant={isSmScreen ? "body" : "body2"}
+            >
+              {Lang.Tokenomics.Text}
+            </Typography>
+          </Box>
         </Box>
         <Grid container alignItems="center" spacing={12}>
-          <Grid xs={12} md style={{ textAlign: "center" }}>
+          <Grid xs={12} md style={{ textAlign: "center" }} className="mt">
             {/* <Item> */}
             <img
               src={TokenomicsPic}
               alt={Lang.Tokenomics.Title2}
-              style={{ width: isMdScreen ? "600px" : "80%" }}
+              style={{
+                width: isMdScreen ? "700px" : "80%",
+                // marginTop: isMdScreen ? "-50px" : "",
+              }}
             />
             {/* </Item> */}
           </Grid>
-          <Grid xs={12} md>
+          <Grid xs={12} md className="mt">
             <TokenomicStuff />
           </Grid>
         </Grid>
