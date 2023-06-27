@@ -24,19 +24,17 @@ export default function TokenomicsItems({ Title, Color }) {
   console.log(Title, Color);
   return (
     <ListItem disablePadding>
-      <ListItemButton>
-        <ListItemIcon>
-          <Box
-            sx={{
-              bgcolor: Color,
-              width: "20px",
-              height: "20px",
-              borderRadius: "100px",
-            }}
-          />
-        </ListItemIcon>
-        <ListItemText primary={Title} />
-      </ListItemButton>
+      <ListItemIcon>
+        <Box
+          sx={{
+            bgcolor: Color,
+            width: "20px",
+            height: "20px",
+            borderRadius: "100px",
+          }}
+        />
+      </ListItemIcon>
+      <ListItemText primary={Title} />
     </ListItem>
   );
 }

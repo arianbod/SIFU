@@ -10,8 +10,6 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import BackgroundSlider from "./assets/slider_bg.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-// import "./fonts/poppins.css";
-
 import Navigation from "./components/structure/header/Navigation.js";
 import Slider from "./components/structure/body/1_Slider";
 import Introduction from "./components/structure/body/2_Introduction";
