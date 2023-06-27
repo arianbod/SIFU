@@ -8,23 +8,21 @@ import { CardActionArea } from "@mui/material";
 export default function ActionAreaCard({ photo, name, positionRole }) {
   return (
     <Card sx={{ maxWidth: 345, m: 2, borderRadius: 5 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          // width="100px"
-          image={photo}
-          alt="green iguana"
-          sx={{ maxWidth: "300px", padding: 5 }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {positionRole}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <CardMedia
+        component="img"
+        // width="100px"
+        image={photo}
+        alt="green iguana"
+        sx={{ maxWidth: "300px", padding: 5 }}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {positionRole}
+        </Typography>
+      </CardContent>
     </Card>
   );
 }
