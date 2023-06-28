@@ -1,7 +1,7 @@
 import TelegramIcon from "@mui/icons-material/Telegram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { Box, Link, CardActionArea } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import Badge from "@mui/material/Badge";
@@ -23,35 +23,46 @@ export default function SvgIconsColor() {
         },
       }}
     >
-      <Badge
-        badgeContent={Lang.Connect.Buttons.Twitter}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-      >
-        <TwitterIcon sx={{ color: blue[500], fontSize: 60 }} />
-      </Badge>
-
-      <Badge
-        badgeContent={Lang.Connect.Buttons.TelegramChannel}
-        color="primary"
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-      >
-        <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />
-      </Badge>
-      <Badge
-        badgeContent={Lang.Connect.Buttons.TelegramGroup}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-      >
-        <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />
-      </Badge>
+      <Link href="https://twitter.com/RegalSifu" underline="none">
+        <Badge
+          badgeContent={Lang.Connect.Buttons.Twitter}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "right",
+          }}
+        >
+          <CardActionArea>
+            <TwitterIcon sx={{ color: blue[500], fontSize: 60 }} />
+          </CardActionArea>
+        </Badge>
+      </Link>
+      <Link href="http://t.me/regalsifu" underline="none">
+        <Badge
+          badgeContent={Lang.Connect.Buttons.TelegramChannel}
+          color="primary"
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "right",
+          }}
+        >
+          <CardActionArea>
+            <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />
+          </CardActionArea>
+        </Badge>
+      </Link>
+      <Link href="http://t.me/regalsifu_chat" underline="none">
+        <Badge
+          badgeContent={Lang.Connect.Buttons.TelegramGroup}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "right",
+          }}
+        >
+          <CardActionArea>
+            <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />{" "}
+          </CardActionArea>
+        </Badge>
+      </Link>
     </Box>
   );
 }

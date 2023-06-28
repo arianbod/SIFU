@@ -13,7 +13,7 @@ function ActionButton() {
           fontSize: "10px",
           padding: "10px 30px",
           fontWeight: "bold",
-          textShadow: "1px 1px black",
+          // textShadow: "1px 1px black",
         }}
       >
         {Lang.Contact}
