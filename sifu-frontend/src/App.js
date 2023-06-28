@@ -19,8 +19,9 @@ import Team from "./components/structure/body/5_Team";
 import Connect from "./components/structure/body/6_Connect";
 import Outro from "./components/structure/body/7_Outro";
 import Footer from "./components/structure/body/8_Footer";
-import FooterBg from "./assets/Footer_bg.png";
-import RoadmapBg from "./assets/Roadmap_bg.png";
+import FooterBg from "./assets/Footer_bg.jpg";
+import RoadmapBg from "./assets/Roadmap_bg.jpg";
+import Fade from "@mui/material/Fade";
 const darkTheme = createTheme({
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -66,21 +67,27 @@ function App() {
               }}
             >
               <Navigation />
-              <Slider />
+              <Fade in timeout={2000}>
+                <div>
+                  <Slider />
+                </div>
+              </Fade>
             </Box>
           </header>
           {/* <Box sx={{ height: "100vh" }} /> */}
-          <div className="mt">
-            <Introduction />
-          </div>
+          <Fade in timeout={6000}>
+            <div className="mt">
+              <Introduction />
+            </div>
+          </Fade>
           <div className="mt">
             <Tokenomics />
           </div>
           <div className="mt">
             <Box
               sx={{
-                backgroundImage: `url(${FooterBg})`,
-                backgroundSize: "cover",
+                backgroundImage: `url(${RoadmapBg})`,
+                backgroundSize: isMdScreen ? "100% 100%" : "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 padding: "20px",
@@ -99,7 +106,7 @@ function App() {
             <Box
               sx={{
                 backgroundImage: `url(${FooterBg})`,
-                backgroundSize: "cover",
+                backgroundSize: isMdScreen ? "100% 100%" : "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 padding: "10px",

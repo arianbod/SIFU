@@ -151,7 +151,12 @@ export default function AutoGrid() {
               </Grid>
             </Grid>
           </Grid>
-          <Divider orientation="vertical" flexItem sx={{ margin: "50px" }} />
+          <Divider
+            light
+            orientation="vertical"
+            flexItem
+            sx={{ margin: "50px" }}
+          />
 
           <Grid xs={12} md={5}>
             <Grid

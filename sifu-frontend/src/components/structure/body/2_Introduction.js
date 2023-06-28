@@ -18,7 +18,7 @@ export default function SimpleContainer() {
       <Box
         sx={{
           backgroundImage: `url(${Background})`,
-          backgroundSize: "contain",
+          backgroundSize: issmScreen ? "contain" : "cover",
           display: "flex",
           justifyContent: "center",
           backgroundRepeat: "no-repeat",
@@ -39,7 +39,7 @@ export default function SimpleContainer() {
             padding: "0 16px", // Add some horizontal padding
           }}
         >
-          <Box className="DMSans">
+          <Box className="DMSans mb">
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}
               variant={issmScreen ? "h2" : "h4"}
@@ -47,7 +47,10 @@ export default function SimpleContainer() {
               {Lang.Introduction.Title1}
             </Typography>
             <Typography
-              sx={{ display: "inline", fontWeight: "bold" }}
+              sx={{
+                display: "inline",
+                fontWeight: "bold",
+              }}
               variant={issmScreen ? "h2" : "h4"}
               color="primary"
             >

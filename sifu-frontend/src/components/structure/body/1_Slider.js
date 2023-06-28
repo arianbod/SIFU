@@ -16,6 +16,7 @@ export default function SimpleContainer() {
     <div id="Home">
       <Container maxWidth="xl">
         <CssBaseline />
+
         <Box
           sx={{
             paddingTop: isMdScreen ? "80px" : "50px",

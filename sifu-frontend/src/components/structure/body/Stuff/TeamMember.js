@@ -7,12 +7,20 @@ import { CardActionArea } from "@mui/material";
 
 export default function ActionAreaCard({ photo, name, positionRole }) {
   return (
-    <Card sx={{ maxWidth: 345, m: 2, borderRadius: 5 }}>
+    <Card
+      sx={{
+        maxWidth: 345,
+        m: 2,
+        borderRadius: 5,
+        backgroundColor: "rgb(32 32 36)!important",
+      }}
+      className="RoadMapSection"
+    >
       <CardMedia
         component="img"
         // width="100px"
         image={photo}
-        alt="green iguana"
+        alt="Team Member"
         sx={{ maxWidth: "300px", padding: 5 }}
       />
       <CardContent>

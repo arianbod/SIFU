@@ -13,7 +13,7 @@ export default function SimpleContainer() {
     <div id="Connect">
       <Box
         sx={{
-          backgroundImage: `url(${Background})`,
+          // backgroundImage: `url(${Background})`,
           backgroundSize: "contain",
           display: "flex",
           justifyContent: "center",
@@ -39,7 +39,7 @@ export default function SimpleContainer() {
               sx={{ display: "inline", fontWeight: "bold" }}
               variant={isSmScreen ? "h2" : "h4"}
             >
-              {Lang.Connect.Title1} &nbsp;
+              {Lang.Connect.Title1}
             </Typography>
             <Typography
               sx={{ display: "inline", fontWeight: "bold" }}

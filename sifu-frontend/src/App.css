@@ -70,7 +70,7 @@
   /* Add more styles as needed */
   margin-top:10px
 }
-.RoadMapSection{background: #202024;border-radius: 10px;margin:10px;padding: 20px !important;}
+.RoadMapSection{background: #202024;border-radius: 10px;margin:10px;padding: 20px !important;border:1px solid white}
 html {
   scroll-behavior: smooth;
 }
@@ -123,3 +123,4 @@ html {
 }
 
 /* Styles for extra large devices */
+	.MuiDivider-light{    border: 1.5px solid #ffffff!important;}

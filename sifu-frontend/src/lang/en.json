@@ -36,7 +36,7 @@
   },
   "Roadmap": {
     "Title1": "The Sifu",
-    "Title2": "Map",
+    "Title2": " Map",
     "Step1": {
       "Title": "Phase 1",
       "Description": "Foundation & Launch",
@@ -67,7 +67,7 @@
   },
   "Team": {
     "Title1": "Sifu",
-    "Title2": "Squad",
+    "Title2": " Squad",
     "Member1": { "name": "Shaolin Monk", "positionRole": "Community leader" },
     "Member2": { "name": "Feng Shui Guru", "positionRole": "Developer" },
     "Member3": { "name": "Wushu Warrior", "positionRole": "Marketing officer" },
@@ -75,7 +75,7 @@
   },
   "Connect": {
     "Title1": "Get",
-    "Title2": "Involved",
+    "Title2": " Involved",
     "Paragpraph": "We invite you to join Regal Sifu and become an active part of our growing community. By acquiring our tokens, participating in voting events, and engaging in our programs, you'll have the opportunity to shape the future of our project. Join us today and unlock your potential in the world of cryptocurrency.",
     "Buttons": { "Twitter": "", "TelegramChannel": "Chat", "TelegramGroup": "" }
   },
