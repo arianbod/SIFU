@@ -112,9 +112,17 @@
     "Section3": {
       "Title": "Socials",
       "Links": [
-        { "Title": "Twitter", "Url": "#", "Color": "" },
-        { "Title": "Telegram", "Url": "#", "Color": "" },
-        { "Title": "Telegram chat", "Url": "#", "Color": "" }
+        {
+          "Title": "Twitter",
+          "Url": "https://twitter.com/RegalSifu",
+          "Color": ""
+        },
+        { "Title": "Telegram", "Url": "https://t.me/regalsifu", "Color": "" },
+        {
+          "Title": "Telegram chat",
+          "Url": "http://t.me/regalsifu_chat",
+          "Color": ""
+        }
       ]
     },
     "Rights": "Copyright © 2023 Regal Sifu. All rights reserved"
