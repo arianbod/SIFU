@@ -67,7 +67,7 @@ function App() {
               }}
             >
               <Navigation />
-              <Fade in timeout={2000}>
+              <Fade in timeout={4000}>
                 <div>
                   <Slider />
                 </div>
