@@ -1,14 +1,14 @@
 import * as React from "react";
 import { Typography, Box } from "@mui/material";
 import Lang from "../lang/en.json";
-import LogoImage from "../assets/Logo.svg";
+import LogoImage from "../assets/Logo.png";
 export default function ImageAvatars() {
   return (
     <Box sx={{ display: "flex" }}>
       <img
         alt={Lang.ProjectName}
         src={LogoImage}
-        // sx={{ width: 56, height: 56 }}
+        width={50}
       />
       <Typography
         variant="h6"

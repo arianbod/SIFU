@@ -23,9 +23,9 @@ export default function SvgIconsColor() {
         },
       }}
     >
-      <Link href="https://twitter.com/RegalSifu" underline="none">
+      <Link href="https://twitter.com/KromSec" underline="none">
         <Badge
-          badgeContent={Lang.Connect.Buttons.Twitter}
+          badgeContent={Lang.Connect.Buttons.Twitter} color="primary"
           anchorOrigin={{
             vertical: "bottom",
             horizontal: "right",
@@ -36,7 +36,7 @@ export default function SvgIconsColor() {
           </CardActionArea>
         </Badge>
       </Link>
-      <Link href="http://t.me/regalsifu" underline="none">
+      <Link href="https://t.me/KromSec404" underline="none">
         <Badge
           badgeContent={Lang.Connect.Buttons.TelegramChannel}
           color="primary"
@@ -50,16 +50,16 @@ export default function SvgIconsColor() {
           </CardActionArea>
         </Badge>
       </Link>
-      <Link href="http://t.me/regalsifu_chat" underline="none">
+      <Link href="https://t.me/KromSecBot" underline="none">
         <Badge
-          badgeContent={Lang.Connect.Buttons.TelegramGroup}
+          badgeContent={Lang.Connect.Buttons.TelegramGroup} color="primary"
           anchorOrigin={{
             vertical: "bottom",
             horizontal: "right",
           }}
         >
           <CardActionArea>
-            <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />{" "}
+            <TelegramIcon sx={{ color: blue[500], fontSize: 60 }} />
           </CardActionArea>
         </Badge>
       </Link>

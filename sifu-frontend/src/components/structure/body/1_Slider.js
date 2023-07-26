@@ -39,10 +39,13 @@ export default function SimpleContainer() {
               textAlign: "center",
 
               margin: "0 auto",
-              padding: "0 16px",
+              padding: "0", overflow: "hidden"
             }}
             className="DMSans"
           >
+            <Box sx={{ opacity: "0.5", mt: "-150px" }}>
+              <img src={SliderPic} alt={Lang.ProjectName} />
+            </Box>
             <Typography
               sx={{ color: "#777E90", fontWeight: "bold" }}
               variant={issmScreen ? "h5" : "caption"}
@@ -56,9 +59,6 @@ export default function SimpleContainer() {
             >
               {Lang.Slider.Text}
             </Typography>
-            <Box sx={{ mt: isMdScreen ? "50px" : "10px" }}>
-              <img src={SliderPic} alt={Lang.ProjectName} />
-            </Box>
           </Box>
         </Box>
       </Container>

@@ -4,7 +4,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { Typography } from "@mui/material";
 import Lang from "../../../lang/en.json";
 import ActionButton from "../header/ActionButton";
-import Photo from "../../../assets/Outro_pic.png";
+import Photo from "../../../assets/Logo.png";
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -34,7 +34,7 @@ export default function AutoGrid() {
         <Grid container spacing={2}>
           <Grid xs={12} md sx={{ textAlign: "center" }}>
             {/* <Item> */}
-            <img src={Photo} alt={Lang.Outro.Title2} />
+            <img src={Photo} alt={Lang.Outro.Title2} style={{ maxWidth: 400 }} />
             {/* </Item> */}
           </Grid>
           <Grid xs={12} md>

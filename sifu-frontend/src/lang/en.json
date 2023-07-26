@@ -1,96 +1,107 @@
 {
-  "ProjectName": "Regal Sifu",
-  "Contact": "Buy Now",
+  "ProjectName": "KromSecurity",
+  "Contact": "#OPIran",
   "Navigation": {
     "Home": "Home",
-    "About": "About",
-    "Tokenomics": "Tokenomics",
-    "Roadmap": "Roadmap",
+    "Roadmap": "Vision",
+    "About": "Blog",
+    "Tokenomics": "Lessons",
     "Team": "Team",
-    "Staking": "Staking"
+    "Staking": "#OP Lists"
   },
   "Slider": {
-    "Header": "Memecoin from the East",
-    "Text": "Welcome to The Regal Sifu",
-    "Text2": "Regal Sifu is a meme-coin built on the Ethereum blockchain."
+    "Header": "We do not forgive, #Expect_us",
+    "Text": "KromSecurity",
+    "Text2": "we only belieave in people"
   },
   "Introduction": {
-    "Title1": "The Sifu ",
-    "Title2": "Legacy",
-    "Paragpraph": "Once upon a time in the vast kingdom of Shanghua, lived a rare & majestic panda named Ming. Known for his extraordinary wisdom and unmatched martial arts skills, Ming had earned the coveted title of \"The Regal Sifu - Emperor's Advisor.\"",
+    "Title1": "#Krom",
+    "Title2": "Security?",
+    "Paragpraph": "One of Spid3r and Kromsec best weapons are the DDoS attacks, both against Russia and Iran. Their characteristics may suggest that they cause only temporary and limited damage, but in reality this is not the case. “Turning off unimportant targets for 5 minutes doesn’t work at all ",
     "Button": "Read more"
   },
   "Tokenomics": {
-    "Title1": "Sifu",
-    "Title2": "nomics",
-    "Text": "Token Supply: 1000000000",
+    "Title1": "#Op",
+    "Title2": "rations",
+    "Text": "Op Means Freedom Opertations, our share of each operations",
     "Items": [
-      { "Title": "42.5% Presale", "Color": "#CE1620" },
-      { "Title": "15% Liquidity", "Color": "#FBDCA6" },
-      { "Title": "12.5% Burn", "Color": "#F7F7FA" },
-      { "Title": "10% Staking", "Color": "#E67817" },
-      { "Title": "10% Marketing", "Color": "#FF6565" },
-      { "Title": "5% Team", "Color": "#FCAF61" },
-      { "Title": "5% Advisors", "Color": "#FFA8A8" }
+      { "Title": "42.5% #IranOp", "Color": "#CE1620" },
+      { "Title": "15% #TurkeyOp", "Color": "#FBDCA6" },
+      { "Title": "12.5% #SenegalOp", "Color": "#F7F7FA" },
+      { "Title": "10% #RussiaOp", "Color": "#E67817" },
+      { "Title": "10% #NijeriaOp", "Color": "#FF6565" },
+      { "Title": "5% #USOp", "Color": "#FCAF61" },
+      { "Title": "5% #othersOp", "Color": "#FFA8A8" }
     ]
   },
   "Roadmap": {
-    "Title1": "The Sifu",
-    "Title2": " Map",
+    "Title1": "How it ",
+    "Title2": " Works?",
     "Step1": {
       "Title": "Phase 1",
-      "Description": "Foundation & Launch",
+      "Description": "you try to be a bad Government",
       "Items": [
-        "Establish the core team and advisors",
-        "Establish social media presence",
-        "Develop the Website & Whitepaper",
-        "Pass Audit & KYC",
-        "Finalize Private Sale & Public Sale",
-        "Launch on Ethereum Blockchain"
+        "Human rights violations",
+        "Corruption and embezzlement",
+        "Suppression of political opposition",
+        "Censorship and control of the media",
+        "Forced displacements and land grabs"
       ]
     },
     "Step2": {
       "Title": "Phase 2",
-      "Description": "Listing & Marketing",
+      "Description": "we watching your acts",
       "Items": [
-        "Listing on Decentralized & Centralized exchanges",
-        "Launch staking program to incentivize token holders",
-        "Huge Chinese & Global marketing campaigns",
-        "Forge partnerships with other known projects"
+        "Surveillance and monitoring of citizens",
+        "Blacklisting and targeted discrimination",
+        "Secret prisons and detention centers",
+        "Covert operations and assassinations",
+        "Cyberattacks and online censorship"
       ]
     },
     "Step3": {
       "Title": "Phase 3",
-      "Description": "Long term growth",
-      "Items": ["Launch NFT Collection", "Develop more utilities"]
+      "Description": "Finally, we React to your bad behaviours",
+      "Items": [
+        "Unauthorized Access",
+        "Malware Distribution",
+        "DDOS Attacks",
+        "Denial of Service (DoS) Attacks",
+        "Data Breaches",
+        "Botnet Creation and Control",
+        "Cyber Extortion"
+      ]
     }
   },
   "Team": {
-    "Title1": "Sifu",
-    "Title2": " Squad",
-    "Member1": { "name": "Shaolin Monk", "positionRole": "Community leader" },
-    "Member2": { "name": "Feng Shui Guru", "positionRole": "Developer" },
-    "Member3": { "name": "Wushu Warrior", "positionRole": "Marketing officer" },
-    "Member4": { "name": "Dragon Slayer", "positionRole": "Designer" }
+    "Title1": "Krom",
+    "Title2": "Squad",
+    "Member1": { "name": "Assoult Team", "positionRole": "Founder" },
+    "Member2": { "name": " Intelligence Team", "positionRole": "Developer" },
+    "Member3": { "name": "Software Team", "positionRole": "#Op Manager" },
+    "Member4": { "name": "Design Team", "positionRole": "cavalry" }
   },
   "Connect": {
     "Title1": "Get",
     "Title2": " Involved",
-    "Paragpraph": "We invite you to join Regal Sifu and become an active part of our growing community. By acquiring our tokens, participating in voting events, and engaging in our programs, you'll have the opportunity to shape the future of our project. Join us today and unlock your potential in the world of cryptocurrency.",
-    "Buttons": { "Twitter": "", "TelegramChannel": "Chat", "TelegramGroup": "" }
+    "Paragpraph": "We invite you to join KromSecurity and become an active part of our growing community. Join us today and unlock your potential in the world of Freedom.",
+    "Buttons": {
+      "Twitter": "Follow",
+      "TelegramChannel": "Chat",
+      "TelegramGroup": "Channel"
+    }
   },
   "Outro": {
-    "Title1": "Meet Our ",
-    "Title2": "Mascot",
-    "Paragpraph": "Our mascot, the panda, symbolizes wisdom, tranquility, and strength. Pandas hold deep cultural significance in Asia and have become an icon representing our commitment to uniting the Asian community. Embracing the spirit of the panda, we strive to empower our members and create a sense of unity within our project."
+    "Title1": "watch Our ",
+    "Title2": "Lesson",
+    "Paragpraph": "We invite you to join KromSecurity and become an active part of our growing community. Join us today and unlock your potential in the world of Freedom."
   },
   "Footer": {
     "LogoSection": {
-      "Title": "Regal Sifu",
       "Links": [
         { "Title": "Master the art of", "Url": "#", "Color": "" },
-        { "Title": "crypto trading with", "Url": "#", "Color": "" },
-        { "Title": "SIFU.", "Url": "#", "Color": "" }
+        { "Title": "brining Justice with", "Url": "#", "Color": "" },
+        { "Title": "KromSec.", "Url": "#", "Color": "" }
       ]
     },
     "Section1": {
@@ -104,9 +115,9 @@
     "Section2": {
       "Title": "About",
       "Links": [
-        { "Title": "Documentation", "Url": "#", "Color": "" },
-        { "Title": "Audit + KYC", "Url": "#", "Color": "" },
-        { "Title": "Etherscan.io", "Url": "#", "Color": "" }
+        { "Title": "Visons", "Url": "#", "Color": "" },
+        { "Title": "Ideas", "Url": "#", "Color": "" },
+        { "Title": "Targets", "Url": "#", "Color": "" }
       ]
     },
     "Section3": {
@@ -114,17 +125,17 @@
       "Links": [
         {
           "Title": "Twitter",
-          "Url": "https://twitter.com/RegalSifu",
+          "Url": "https://twitter.com/KromSec",
           "Color": ""
         },
-        { "Title": "Telegram", "Url": "https://t.me/regalsifu", "Color": "" },
+        { "Title": "Telegram", "Url": "https://t.me/KromSec404", "Color": "" },
         {
-          "Title": "Telegram chat",
-          "Url": "http://t.me/regalsifu_chat",
+          "Title": "Telegram Shop",
+          "Url": "https://t.me/KromSecShop",
           "Color": ""
         }
       ]
     },
-    "Rights": "Copyright © 2023 Regal Sifu. All rights reserved"
+    "Rights": "Copyright © 2023 KromSecurity. All rights reserved"
   }
 }
