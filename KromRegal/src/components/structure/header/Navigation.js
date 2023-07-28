@@ -7,7 +7,7 @@ import {
   IconButton,
   Menu,
   MenuItem,
-  Button,
+  Button, Fade
 } from "@mui/material";
 // import { Menu as MenuIcon } from "@mui/icons-material";
 import MenuIcon from "../../../assets/Burger.svg";
@@ -35,113 +35,119 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
   return (
-    <AppBar
-      position="relative"
-      style={{
-        maxWidth: "1100px",
-        textAlign: "center",
-        margin: "auto",
-        boxShadow: "none",
-      }}
-      color="transparent"
-    >
-      {/* <Container maxWidth="md" sx={{ backgroundColor: "#202024" }}> */}
-      <Toolbar disableGutters>
-        {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-        <Logo />
+    <header className="App-header mb">
 
 
-        <Box
-          ClassName="PCMenu"
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", md: "flex", justifyContent: "center" },
-          }}
-        >
-          {Lang.Navigation.map((page, Index) => (
+      <AppBar
+        position="relative"
+        style={{
+          maxWidth: "1100px",
+          textAlign: "center",
+          margin: "auto",
+          boxShadow: "none",
+        }}
+        color="transparent"
+      >
+        {/* <Container maxWidth="md" sx={{ backgroundColor: "#202024" }}> */}
+        <Toolbar disableGutters>
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+          <Logo />
 
-            <MenuItem
-              sx={{ textTransform: "none!important" }}
-              key={Index}
-              onClick={handleCloseNavMenu}
-            >
+
+          <Box
+            ClassName="PCMenu"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", justifyContent: "center" },
+            }}
+          >
+            {Lang.Navigation.map((Item, Index) => (
               <Link
-                to={page.Url}
+                to={`/${Item.Url}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-
-                {page.Title}
-
-              </Link>
-            </MenuItem>
-
-          ))}
-
-        </Box>
-
-        <Box
-          ClassName="phoneMenu"
-          sx={{
-            flexGrow: 1,
-            display: {
-              xs: "flex",
-              md: "none",
-              textAlign: "center",
-              justifyContent: "flex-end",
-            },
-          }}
-        >
-          <IconButton
-            size="large"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-          >
-            <img src={MenuIcon} />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none", textAlign: "center" },
-            }}
-          >
-            {Lang.Navigation.map((page, Index) => (
-
-              <MenuItem
-                sx={{ textTransform: "none!important" }}
-                key={Index}
-                onClick={handleCloseNavMenu}
-              >
-                <Link
-                  to={page.Url}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                <MenuItem
+                  sx={{ textTransform: "none!important" }}
+                  key={Index}
+                  onClick={handleCloseNavMenu}
                 >
-                  {page.Title}
-                </Link>
-              </MenuItem>
 
+
+                  {Item.Title}
+
+
+                </MenuItem>
+              </Link>
             ))}
-          </Menu>
-        </Box>
-        <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          <ActionButton />
-        </Box>
-      </Toolbar>
 
-    </AppBar>
+          </Box>
+
+          <Box
+            ClassName="phoneMenu"
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+                textAlign: "center",
+                justifyContent: "flex-end",
+              },
+            }}
+          >
+            <IconButton
+              size="large"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <img src={MenuIcon} />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none", textAlign: "center" },
+              }}
+            >
+              {Lang.Navigation.map((page, Index) => (
+
+                <MenuItem
+                  sx={{ textTransform: "none!important" }}
+                  key={Index}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Link
+                    to={page.Url}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {page.Title}
+                  </Link>
+                </MenuItem>
+
+              ))}
+            </Menu>
+          </Box>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <ActionButton />
+          </Box>
+        </Toolbar>
+
+      </AppBar>
+
+
+    </header>
   );
 }
 
