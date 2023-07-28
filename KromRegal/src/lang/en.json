@@ -1,14 +1,14 @@
 {
   "ProjectName": "KromSecurity",
   "Contact": "#OPIran",
-  "Navigation": {
-    "Home": "Home",
-    "Roadmap": "Vision",
-    "About": "Blog",
-    "Tokenomics": "Lessons",
-    "Team": "Team",
-    "Staking": "#OP Lists"
-  },
+  "Navigation": [
+    { "Title": "Home", "Url": "Home", "Anchor": false },
+    { "Title": "Roadmap", "Url": "Vision", "Anchor": false },
+    { "Title": "Blog", "Url": "Blog", "Anchor": false },
+    { "Title": "Tokenomics", "Url": "Lessons", "Anchor": false },
+    { "Title": "Team", "Url": "#Team", "Anchor": false },
+    { "Title": "#OP Lists", "Url": "/", "Anchor": false }
+  ],
   "Slider": {
     "Header": "We do not forgive, #Expect_us",
     "Text": "KromSecurity",

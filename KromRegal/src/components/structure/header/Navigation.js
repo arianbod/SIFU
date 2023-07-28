@@ -34,14 +34,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
-  const { Navigation } = Lang;
-
-  const pages = Object.entries(Navigation).map(([key, value]) => ({
-    name: value,
-    url: `#${key}`,
-  }));
-
   return (
     <AppBar
       position="relative"
@@ -57,6 +49,35 @@ function ResponsiveAppBar() {
       <Toolbar disableGutters>
         {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
         <Logo />
+
+
+        <Box
+          ClassName="PCMenu"
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", md: "flex", justifyContent: "center" },
+          }}
+        >
+          {Lang.Navigation.map((page, Index) => (
+
+            <MenuItem
+              sx={{ textTransform: "none!important" }}
+              key={Index}
+              onClick={handleCloseNavMenu}
+            >
+              <Link
+                to={page.Url}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+
+                {page.Title}
+
+              </Link>
+            </MenuItem>
+
+          ))}
+
+        </Box>
 
         <Box
           ClassName="phoneMenu"
@@ -97,55 +118,23 @@ function ResponsiveAppBar() {
               display: { xs: "block", md: "none", textAlign: "center" },
             }}
           >
-            {pages.map((page) => (
-              <AnchorLink
-                href={page.url}
-                style={{ textDecoration: "none", color: "inherit" }}
+            {Lang.Navigation.map((page, Index) => (
+
+              <MenuItem
+                sx={{ textTransform: "none!important" }}
+                key={Index}
+                onClick={handleCloseNavMenu}
               >
-                <MenuItem
-                  sx={{ textTransform: "none!important" }}
-                  key={page.name}
-                  onClick={handleCloseNavMenu}
+                <Link
+                  to={page.Url}
+                  style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <Link
-                    href={page.url}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    {page.name}
-                  </Link>
-                </MenuItem>
-              </AnchorLink>
+                  {page.Title}
+                </Link>
+              </MenuItem>
+
             ))}
           </Menu>
-        </Box>
-        <Box
-          ClassName="PCMenu"
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", md: "flex", justifyContent: "center" },
-          }}
-        >
-          {pages.map((page) => (
-            <AnchorLink
-              href={page.url}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <Button
-                key={page.name}
-                component={Link}
-                to={page.url}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "#C0BFD0",
-                  display: "block",
-                  textTransform: "none",
-                }}
-              >
-                {page.name}
-              </Button>
-            </AnchorLink>
-          ))}
         </Box>
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <ActionButton />
