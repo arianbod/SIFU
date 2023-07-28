@@ -3,8 +3,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 
-import Lang from "../../../lang/en.json";
-import Background from "../../../assets/cloud.png";
+import Lang from "../../../../lang/en.json";
+import Background from "../../../../assets/cloud.png";
 
 import { Typography, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";

@@ -3,7 +3,7 @@ import { Box, Typography, List, Container } from "@mui/material/";
 import Grid from "@mui/material/Unstable_Grid2";
 import Lang from "../../../lang/en.json";
 import Logo from "../../Logo";
-import FooterSectionItems from "./Stuff/FooterSectionItems";
+import FooterSectionItems from "./FooterSectionItems";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ThemeProvider, createTheme } from "@mui/material/styles";

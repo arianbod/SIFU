@@ -1,5 +1,5 @@
 import * as React from "react";
-import Lang from "../../../../lang/en.json";
+import Lang from "../../../lang/en.json";
 
 import {
   Grid,
@@ -20,21 +20,16 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
-export default function TokenomicsItems({ Title, Color }) {
-  console.log(Title, Color);
+export default function TokenomicsItems({ Title, Url }) {
   return (
-    <ListItem disablePadding>
-      <ListItemIcon>
-        <Box
-          sx={{
-            bgcolor: Color,
-            width: "20px",
-            height: "20px",
-            borderRadius: "100px",
-          }}
-        />
-      </ListItemIcon>
-      <ListItemText primary={Title} />
+    <ListItem style={{ paddingLeft: " 0px" }}>
+      <ListItemText>
+        <Typography variant="caption">
+          <a href={Url} className="GreyText">
+            {Title}
+          </a>
+        </Typography>
+      </ListItemText>
     </ListItem>
   );
 }

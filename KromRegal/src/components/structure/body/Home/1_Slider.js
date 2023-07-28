@@ -5,10 +5,10 @@ import Fade from "@mui/material/Fade";
 import Container from "@mui/material/Container";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Lang from "../../../lang/en.json";
-import SliderPic from "../../../assets/Slider_pic.png";
+import Lang from "../../../../lang/en.json";
+import SliderPic from "../../../../assets/Slider_pic.png";
 import { Typography } from "@mui/material";
-import BackgroundSlider from "../../../assets/kromsec-kromsecurity.gif";
+import BackgroundSlider from "../../../../assets/kromsec-kromsecurity.gif";
 export default function SimpleContainer() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));

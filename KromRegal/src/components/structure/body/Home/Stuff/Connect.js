@@ -5,7 +5,7 @@ import { Box, Link, CardActionArea } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import Badge from "@mui/material/Badge";
-import Lang from "../../../../lang/en.json";
+import Lang from "../../../../../lang/en.json";
 function HomeIcon(props) {
   return (
     <SvgIcon {...props}>

@@ -2,8 +2,8 @@ import * as React from "react";
 
 import Box from "@mui/material/Box";
 
-import Lang from "../../../lang/en.json";
-import Background from "../../../assets/cloud.png";
+import Lang from "../../../../lang/en.json";
+import Background from "../../../../assets/cloud.png";
 import { Typography, useTheme, useMediaQuery } from "@mui/material";
 import SocialButtons from "./Stuff/Connect";
 export default function SimpleContainer() {

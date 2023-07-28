@@ -2,13 +2,13 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Box, Typography, Grid } from "@mui/material/";
 
-import Lang from "../../../lang/en.json";
+import Lang from "../../../../lang/en.json";
 
 import ActionAreaCard from "./Stuff/TeamMember"; // Import the updated component
-import CardImage1 from "../../../assets/Team/1.png";
-import CardImage4 from "../../../assets/Team/1.png";
-import CardImage3 from "../../../assets/Team/1.png";
-import CardImage2 from "../../../assets/Team/1.png";
+import CardImage1 from "../../../../assets/Team/1.png";
+import CardImage4 from "../../../../assets/Team/1.png";
+import CardImage3 from "../../../../assets/Team/1.png";
+import CardImage2 from "../../../../assets/Team/1.png";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 export default function SimpleContainer() {

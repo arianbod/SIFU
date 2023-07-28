@@ -2,10 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Typography, Divider } from "@mui/material";
-import Lang from "../../../lang/en.json";
+import Lang from "../../../../lang/en.json";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import RoadmapBg from "../../../assets/Roadmap_bg.jpg";
+import RoadmapBg from "../../../../assets/Roadmap_bg.jpg";
 export default function AutoGrid() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));

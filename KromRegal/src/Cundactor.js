@@ -1,26 +1,15 @@
 import React from "react";
-
-import logo from "./logo.svg";
-import "./App.css";
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import Navigation from "./components/structure/header/Navigation.js";
-import Slider from "./components/structure/body/1_Slider";
-import Introduction from "./components/structure/body/2_Introduction";
-import Tokenomics from "./components/structure/body/3_Tokenomics";
-import Roadmap from "./components/structure/body/4_Roadmap";
-import Team from "./components/structure/body/5_Team";
-import Connect from "./components/structure/body/6_Connect";
-import Outro from "./components/structure/body/7_Outro";
-import Footer from "./components/structure/body/8_Footer";
-
-
-import Fade from "@mui/material/Fade";
+import Navigation from "./components/structure/general/Navigation.js";
+import Slider from "./components/structure/body/Home/1_Slider";
+import Introduction from "./components/structure/body/Home/2_Introduction";
+import Tokenomics from "./components/structure/body/Home/3_Tokenomics";
+import Roadmap from "./components/structure/body/Home/4_Roadmap";
+import Team from "./components/structure/body/Home/5_Team";
+import Connect from "./components/structure/body/Home/6_Connect";
+import Outro from "./components/structure/body/Home/7_Outro";
+import Footer from "./components/structure/general/8_Footer";
 const darkTheme = createTheme({
     typography: {
         fontFamily: "Poppins, sans-serif",
@@ -37,9 +26,6 @@ const darkTheme = createTheme({
 });
 
 function Cundoctor() {
-    const theme = useTheme();
-    const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
-    const isxlScreen = useMediaQuery(theme.breakpoints.up("xl"));
     return (
         <>
             <ThemeProvider theme={darkTheme}>
