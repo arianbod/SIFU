@@ -8,7 +8,6 @@ import Container from "@mui/material/Container";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Navigation from "./components/structure/header/Navigation.js";
 import Slider from "./components/structure/body/1_Slider";
