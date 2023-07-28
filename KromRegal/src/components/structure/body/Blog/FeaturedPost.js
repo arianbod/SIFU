@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
-
+import Photo from "../../../../assets/LoremIpsum.webp"
 export default function ActionAreaCard(props) {
     return (<Grid
         container
@@ -17,7 +17,7 @@ export default function ActionAreaCard(props) {
             backgroundPosition: "center ",
             width: "100%",
             alignItems: "top",
-            mt: 7,
+
         }}
     >
         <Card sx={{ width: "100%", height: "50vh" }}>
@@ -25,7 +25,7 @@ export default function ActionAreaCard(props) {
                 <CardMedia
                     component="img"
                     height="500"
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image={Photo}
                     alt={props.Title}
                 />
                 <CardContent>

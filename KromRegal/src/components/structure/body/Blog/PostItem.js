@@ -3,16 +3,18 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Badge from '@mui/material/Badge';
 import { CardActionArea } from '@mui/material';
-
+import Photo from "../../../../assets/LoremIpsum.webp"
 export default function ActionAreaCard(props) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+
+        <Card>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    height="250"
+                    image={Photo}
                     alt={props.Title}
                 />
                 <CardContent>
@@ -25,5 +27,6 @@ export default function ActionAreaCard(props) {
                 </CardContent>
             </CardActionArea>
         </Card>
+
     );
 }
