@@ -23,7 +23,7 @@ export default function SvgIconsColor() {
         },
       }}
     >
-      <Link href="https://twitter.com/KromSec" underline="none">
+      <Link key="https://twitter.com/KromSec" href="https://twitter.com/KromSec" underline="none">
         <Badge
           badgeContent={Lang.Connect.Buttons.Twitter} color="primary"
           anchorOrigin={{
@@ -36,7 +36,7 @@ export default function SvgIconsColor() {
           </CardActionArea>
         </Badge>
       </Link>
-      <Link href="https://t.me/KromSec404" underline="none">
+      <Link key="https://t.me/KromSec404" href="https://t.me/KromSec404" underline="none">
         <Badge
           badgeContent={Lang.Connect.Buttons.TelegramChannel}
           color="primary"
@@ -50,7 +50,7 @@ export default function SvgIconsColor() {
           </CardActionArea>
         </Badge>
       </Link>
-      <Link href="https://t.me/KromSecBot" underline="none">
+      <Link key="https://t.me/KromSecBot" href="https://t.me/KromSecBot" underline="none">
         <Badge
           badgeContent={Lang.Connect.Buttons.TelegramGroup} color="primary"
           anchorOrigin={{

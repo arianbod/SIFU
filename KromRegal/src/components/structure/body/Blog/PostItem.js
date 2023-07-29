@@ -5,7 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
 import { CardActionArea } from '@mui/material';
-import Photo from "../../../../assets/LoremIpsum.webp"
+import Photo from "../../../../assets/LoremIpsum.webp";
+import SubContent from './SubContent';
 export default function ActionAreaCard(props) {
     return (
         <Link key={props.PostId} to={`/Blog/${props.PostId}/${props.PostSlug}`} underline="none">
@@ -23,6 +24,7 @@ export default function ActionAreaCard(props) {
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
                             {props.PostText}
+                            <SubContent Author={props.Author} PublishDate={props.PublishDate} />
                         </Typography>
                     </CardContent>
                 </CardActionArea>

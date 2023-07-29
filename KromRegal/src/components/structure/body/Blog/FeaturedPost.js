@@ -7,9 +7,10 @@ import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
 import { Link } from "react-router-dom";
 import Photo from "../../../../assets/LoremIpsum.webp";
+import SubContent from './SubContent';
 export default function ActionAreaCard(props) {
     return (
-        <Link key={props.PostId} to={`/Blog/${props.PostId}/${props.PostSlug}`} underline="none">
+        <Link key={props.PostId} to={`/Blog/${props.PostId}/${props.PostSlug}`} style={{ textDecoration: "none" }}>
             <Grid
                 container
                 sx={{
@@ -18,30 +19,21 @@ export default function ActionAreaCard(props) {
                     justifyContent: "center",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center ",
-                    width: "100%",
+                    width: "90%", margin: "auto",
                     alignItems: "top",
 
                 }}
             >
-                <Card sx={{ width: "100%", height: "50vh" }}>
-                    <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            height="500"
-                            image={Photo}
-                            alt={props.Title}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                {props.Title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {props.PostText}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>
-        </Link>
+
+                <img
+                    component="img"
+                    src={Photo}
+                    alt={props.Title}
+                />
+                <Typography gutterBottom variant="h5" component="div">
+                    {props.Title}
+                </Typography>
+            </Grid >
+        </Link >
     );
 }

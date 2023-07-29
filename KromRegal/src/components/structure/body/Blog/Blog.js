@@ -29,7 +29,6 @@ const darkTheme = createTheme({
 });
 
 const FeaturedPostData = PostsData.PostsData[PostsData.PostsData.length - 1]
-console.log(`hello ${FeaturedPostData.Title}`);
 function Cundoctor() {
     const theme = useTheme();
     const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
@@ -94,9 +93,9 @@ function Cundoctor() {
                                     mt: 4,
                                 }}
                             >
-                                {PostsData.PostsData.map((Item) =>
-                                    <Grid item xs={12} md={5} mx={isMdScreen ? 1 : 12} my={1}>
-                                        <PostItem PostTitle={Item.Title} PostText={Item.PostText} PostId={Item.id} PostSlug={Item.Slug} />
+                                {PostsData.PostsData.map((Item, Index) =>
+                                    <Grid item xs={12} md={5} xl={3} mx={isMdScreen ? 1 : 12} my={1}>
+                                        <PostItem key={Index} PostTitle={Item.Title} PostText={Item.PostText} PostId={Item.id} PostSlug={Item.Slug} Author={Item.Author} PublishDate={Item.PublishDate} />
                                     </Grid>
                                 )
                                 }

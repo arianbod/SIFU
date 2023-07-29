@@ -53,24 +53,24 @@ export default function Footer() {
               <Grid item xs={6} md>
                 <Typography variant="h6">{Lang.Footer.Section1.Title}</Typography>
                 <List>
-                  {Lang.Footer.Section1.Links.map((item, Index) => (
-                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
+                  {Lang.Footer.Section1.Links.map((Item, Index) => (
+                    <FooterSectionItems key={Index} id={Index} Title={Item.Title} Url={Item.Url} />
                   ))}
                 </List>
               </Grid>
               <Grid item xs={12} md>
                 <Typography variant="h6">{Lang.Footer.Section2.Title}</Typography>
                 <List>
-                  {Lang.Footer.Section2.Links.map((item, Index) => (
-                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
+                  {Lang.Footer.Section2.Links.map((Item, Index) => (
+                    <FooterSectionItems key={Index} id={Index} Title={Item.Title} Url={Item.Url} />
                   ))}
                 </List>
               </Grid>
               <Grid item xs={12} md>
                 <Typography variant="h6">{Lang.Footer.Section3.Title}</Typography>
                 <List>
-                  {Lang.Footer.Section3.Links.map((item, Index) => (
-                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
+                  {Lang.Footer.Section3.Links.map((Item, Index) => (
+                    <FooterSectionItems key={Index} Title={Item.Title} Url={Item.Url} />
                   ))}
                 </List>
               </Grid>

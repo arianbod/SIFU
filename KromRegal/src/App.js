@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Blog from "./components/structure/body/Blog/Blog";
 import Cunductor from './Cundactor';
-import PostPage from './components/structure/body/Blog/PostPage';
+import PostPage from './components/structure/body/Blog/PostPage/PostPage';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {

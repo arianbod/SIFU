@@ -6,13 +6,17 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Navigation from "../../general/Navigation";
-import Footer from '../../general/8_Footer';
-import PostItem from './PostItem';
+import Navigation from "../../../general/Navigation";
+import Footer from '../../../general/8_Footer';
+import PostItem from '../PostItem';
 import FeaturedPost from './FeaturedPost';
-import Search from "./Search";
+import Search from "../Search";
 import { Link, useParams } from "react-router-dom";
-import PostsData from './Data.json';
+import PostsData from '../Data.json';
+import Content from "./Content";
+import SubContent from "../SubContent";
+import Breadcrumbs from "../Breadcrumbs"
+import { Typography } from "@mui/material";
 const darkTheme = createTheme({
     typography: {
         fontFamily: "Poppins, sans-serif",
@@ -36,7 +40,6 @@ function Cundoctor() {
     const PostData = PostsData.PostsData.find(
         (post) => post.id.toString() === id
     );
-    console.log("hello" + PostData.Title)
     return (
         <>
             <ThemeProvider theme={darkTheme}>
@@ -45,6 +48,7 @@ function Cundoctor() {
                 {/* <Container maxWidth="xl"> */}
                 <header className="App-header mb">
                     <Navigation />
+                    <Search />
                 </header>
                 <Box id="body">
                     <Grid
@@ -55,7 +59,7 @@ function Cundoctor() {
                             justifyContent: "center",
                             backgroundRepeat: "no-repeat",
                             backgroundPosition: "center ",
-                            width: "100%",
+                            width: "50%", margin: "auto",
                             alignItems: "top",
 
                         }}
@@ -73,11 +77,17 @@ function Cundoctor() {
                                     alignItems: "top",
                                 }}
                             >
-                                <Search />
+
                             </Grid>
                         </Grid>
                         <Grid item xs={12}>
+                            <Breadcrumbs />
+                        </Grid>
+                        <Grid item xs={12}>
                             <FeaturedPost Title={PostData.Title} />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <SubContent Author={PostData.Author} PublishDate={PostData.PublishDate} />
                         </Grid>
 
                         <Grid item xs={12}>
@@ -97,7 +107,7 @@ function Cundoctor() {
                                     mt: 4,
                                 }}
                             >
-
+                                <Content Text={PostData.Text} />
                             </Grid>
                         </Grid>
                     </Grid>
