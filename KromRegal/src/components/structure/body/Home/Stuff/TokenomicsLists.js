@@ -21,7 +21,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
 export default function TokenomicsItems({ Title, Color }) {
-  console.log(Title, Color);
   return (
     <ListItem disablePadding>
       <ListItemIcon>

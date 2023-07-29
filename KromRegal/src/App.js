@@ -12,7 +12,8 @@ function App() {
         <Route path="/" element={<Cunductor />} />
         <Route path="/home" element={<Cunductor />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<PostPage />} />
+        <Route path="/blog/:id/" element={<PostPage />} />
+        <Route path="/blog/:id/:slug" element={<PostPage />} />
         <Route path="*" element={<Cunductor />} />
       </Routes>
     </Router >

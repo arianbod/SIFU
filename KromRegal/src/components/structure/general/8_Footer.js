@@ -8,7 +8,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import FooterBg from "../../../assets/Footer_bg.jpg";
-export default function AutoGrid() {
+export default function Footer() {
 
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
@@ -54,7 +54,7 @@ export default function AutoGrid() {
                 <Typography variant="h6">{Lang.Footer.Section1.Title}</Typography>
                 <List>
                   {Lang.Footer.Section1.Links.map((item, Index) => (
-                    <FooterSectionItems Title={item.Title} Url={item.Url} />
+                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
                   ))}
                 </List>
               </Grid>
@@ -62,7 +62,7 @@ export default function AutoGrid() {
                 <Typography variant="h6">{Lang.Footer.Section2.Title}</Typography>
                 <List>
                   {Lang.Footer.Section2.Links.map((item, Index) => (
-                    <FooterSectionItems Title={item.Title} Url={item.Url} />
+                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
                   ))}
                 </List>
               </Grid>
@@ -70,7 +70,7 @@ export default function AutoGrid() {
                 <Typography variant="h6">{Lang.Footer.Section3.Title}</Typography>
                 <List>
                   {Lang.Footer.Section3.Links.map((item, Index) => (
-                    <FooterSectionItems Title={item.Title} Url={item.Url} />
+                    <FooterSectionItems id={Index} Title={item.Title} Url={item.Url} />
                   ))}
                 </List>
               </Grid>

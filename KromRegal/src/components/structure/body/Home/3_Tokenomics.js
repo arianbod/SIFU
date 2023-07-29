@@ -15,7 +15,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 //   color: theme.palette.text.secondary,
 // }));
 
-export default function AutoGrid() {
+export default function Tokenomics() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));

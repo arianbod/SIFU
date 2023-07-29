@@ -6,7 +6,7 @@ import Lang from "../../../../lang/en.json";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import RoadmapBg from "../../../../assets/Roadmap_bg.jpg";
-export default function AutoGrid() {
+export default function Roadmap() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));

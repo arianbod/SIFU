@@ -14,7 +14,7 @@ import Photo from "../../../../assets/Logo.png";
 // }));
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-export default function AutoGrid() {
+export default function Outro() {
   const theme = useTheme();
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   return (

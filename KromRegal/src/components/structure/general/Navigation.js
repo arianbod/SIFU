@@ -55,20 +55,19 @@ function ResponsiveAppBar() {
 
 
           <Box
-            ClassName="PCMenu"
+            className="PCMenu"
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex", justifyContent: "center" },
             }}
           >
             {Lang.Navigation.map((Item, Index) => (
-              <Link
+              <Link key={Index}
                 to={`/${Item.Url}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <MenuItem
                   sx={{ textTransform: "none!important" }}
-                  key={Index}
                   onClick={handleCloseNavMenu}
                 >
 
@@ -83,7 +82,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box
-            ClassName="phoneMenu"
+            className="phoneMenu"
             sx={{
               flexGrow: 1,
               display: {
