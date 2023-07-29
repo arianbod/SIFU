@@ -74,7 +74,7 @@ function Cundoctor() {
                             </Grid>
                         </Grid>
                         <Grid item xs={12}>
-                            <FeaturedPost Title={FeaturedPostData.Title} />
+                            <FeaturedPost Title={FeaturedPostData.Title} PostText={FeaturedPostData.PostText} PostId={FeaturedPostData.id} PostSlug={FeaturedPostData.Slug} />
                         </Grid>
 
                         <Grid item xs={12}>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Lang from "../../../../lang/en.json";
 import TokenomicsPic from "../../../../assets/Tokenomics_pic.svg";
